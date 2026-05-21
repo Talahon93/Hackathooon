@@ -1,4 +1,7 @@
 import streamlit as st
+import pandas as pd
+from streamlit_folium import st_folium
+from map_view import create_interactive_map
 
 def render_sidebar():
     st.sidebar.header("Zieleingabe")
@@ -44,9 +47,27 @@ def render_main_content(user_inputs):
     
     with col_map:
         st.subheader("🗺️ Kartenansicht")
-        # Platzhalter für die Leaflet-Karte von Rolle 4
-        st.info("Hier wird bald die interaktive Leaflet-Karte mit dem Strassennetz geladen.")
-        # Später: render_map(user_inputs)
+        
+        # Standardkoordinaten (Zürich)
+        wohnort_koordinaten = (47.3769, 8.5417)
+        poi_daten = None
+        
+        # Wenn der Benutzer auf "Berechnen" geklickt und ein Ort eingegeben hat, Dummy-Daten generieren
+        if user_inputs["calculate_triggered"] and user_inputs["location"]:
+            # Dummy-Daten zur Simulation der Arbeit von Rolle 1 (Data) und Rolle 2 (Algorithmus)
+            poi_daten = pd.DataFrame({
+                'name': ['Schule Zentrum', 'Migros', 'Park am See'],
+                'category': ['Schule', 'Einkaufen', 'Natur'],
+                'lat': [47.3780, 47.3750, 47.3800],
+                'lon': [8.5400, 8.5450, 8.5350],
+                'score': [90, 60, 30] # Grün, Orange, Rot
+            })
+            
+        # 1. Deine Funktion aufrufen, um die Karte zu generieren
+        karte = create_interactive_map(wohnort_koordinaten=wohnort_koordinaten, poi_df=poi_daten)
+        
+        # 2. Die Leaflet-Karte in Streamlit rendern
+        st_folium(karte, width=700, height=500, returned_objects=[])
         
     with col_results:
         st.subheader("📊 Auswertung")
