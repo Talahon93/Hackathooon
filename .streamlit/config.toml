@@ -1,0 +1,15 @@
+[theme]
+# Die Haupt-Akzentfarbe (für Slider, aktive Buttons etc.)
+primaryColor = "#61a2f7"
+
+# Hintergrundfarbe der Hauptseite
+backgroundColor = "#383e56"
+
+# Hintergrundfarbe der Sidebar und von Eingabefeldern
+secondaryBackgroundColor = "#2e2a4f"
+
+# Textfarbe
+textColor = "#f8f9fa"
+
+# Schriftart (Auswahl: "sans serif", "serif", "monospace")
+font = "sans serif"
