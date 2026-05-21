@@ -4,12 +4,18 @@ from streamlit_folium import st_folium
 from map_view import create_interactive_map
 
 def render_sidebar():
-    st.sidebar.header("Zieleingabe")
+    st.sidebar.header("Zieleingabe & Mobilität")
     
     # Startpunkt/Wohnort
     target_location = st.sidebar.text_input(
         "Zieladresse oder Ort in Zürich eingeben", 
         placeholder="z.B. Bahnhofstrasse, Zürich"
+    )
+
+    transport_mode = st.sidebar.radio(
+        "gewünschtes Fortbewegungsmittel",
+        options=["Zu Fuss", "Fahrrad", "Auto"],
+        help="Diese Auswahl beeinflusst, ob die Algorithmen Fusswege, Radwege oder Strassen nutzen."
     )
     
     st.sidebar.divider()
@@ -18,11 +24,13 @@ def render_sidebar():
     st.sidebar.header("⚖️ Gewichtungssystem")
     st.sidebar.write("Wie wichtig sind dir folgende Orte?")
     
-    weight_schools = st.sidebar.slider("🏫 Schulen (für Familien)", 0, 100, 50)
-    weight_shopping = st.sidebar.slider("🛒 Einkaufsmöglichkeiten", 0, 100, 50)
-    weight_transit = st.sidebar.slider("🚆 ÖV-Anbindung", 0, 100, 50)
-    weight_quiet = st.sidebar.slider("🌳 Ruhe & Natur (für Alleinstehende)", 0, 100, 50)
-    
+    weight_schulen = st.sidebar.slider("Schulen", 0, 100, 50)
+    weight_supermaerkte = st.sidebar.slider("Supermärkte", 0, 100, 50)
+    weight_parks = st.sidebar.slider("Grünflächen", 0, 100, 50)
+    weight_anbindung = st.sidebar.slider("ÖV-Anbindung", 0, 100, 50)
+    weight_restaurants = st.sidebar.slider("Restaurants & Cafés", 0, 100, 50)
+    weight_spitäler = st.sidebar.slider("Spitäler & Ärzte", 0, 100, 50)
+
     st.sidebar.divider()
     
     # Berechnen-Button
@@ -31,11 +39,14 @@ def render_sidebar():
     # Alle Daten gesammelt als Dictionary zurückgeben
     return {
         "location": target_location,
+        "transport_mode": transport_mode,
         "weights": {
-            "schule": weight_schools,
-            "einkaufen": weight_shopping,
-            "oev": weight_transit,
-            "ruhe": weight_quiet
+            "schule": weight_schulen,
+            "supermarkt": weight_supermaerkte,
+            "park": weight_parks,
+            "oev": weight_anbindung,
+            "restaurant": weight_restaurants,
+            "spital": weight_spitäler
         },
         "calculate_triggered": calculate_btn
     }
