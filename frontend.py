@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from streamlit_folium import st_folium
 from map_view import create_interactive_map
+from logik import analysiere_standort
 
 def render_sidebar():
     st.sidebar.header("Zieleingabe & Mobilität")
@@ -65,18 +66,17 @@ def render_main_content(user_inputs):
         
         # Wenn der Benutzer auf "Berechnen" geklickt und ein Ort eingegeben hat, Dummy-Daten generieren
         if user_inputs["calculate_triggered"] and user_inputs["location"]:
-            # Dummy-Daten zur Simulation der Arbeit von Rolle 1 (Data) und Rolle 2 (Algorithmus)
-            poi_daten = pd.DataFrame({
-                'name': ['Schule Zentrum', 'Migros', 'Park am See'],
-                'category': ['Schule', 'Einkaufen', 'Natur'],
-                'lat': [47.3780, 47.3750, 47.3800],
-                'lon': [8.5400, 8.5450, 8.5350],
-                'score': [90, 60, 30] # Grün, Orange, Rot
-            })
+            # NEU
+            pois_df, gesamt_score, details = analysiere_standort(
+                lat=wohnort_koordinaten[0],
+                lon=wohnort_koordinaten[1],
+                radius=1000,
+                gewichtung=user_inputs["weights"]   # kommt direkt aus render_sidebar()
+            )
             
         # 1. Deine Funktion aufrufen, um die Karte zu generieren
-        karte = create_interactive_map(wohnort_koordinaten=wohnort_koordinaten, poi_df=poi_daten)
-        
+        # NEU:
+        karte = create_interactive_map(wohnort_koordinaten=wohnort_koordinaten, poi_df=pois_df)        
         # 2. Die Leaflet-Karte in Streamlit rendern
         st_folium(karte, width=700, height=500, returned_objects=[])
         
@@ -90,8 +90,12 @@ def render_main_content(user_inputs):
             else:
                 st.success("Berechnung läuft...")
                 
-                # Dummy-Resultate (bis die Logik von Rolle 2 steht)
-                st.metric(label="🏆 Personalisierter Wohn-Score", value="82 / 100", delta="+12")
+                # NEU:
+                st.metric(label="Personalisierter Wohn-Score", value=f"{gesamt_score} / 100")
+                for kat, info in details.items():
+                    if info["naechster_m"]:
+                        st.write(f"{kat}: {info['naechster_name']} — {info['naechster_m']} m ({info['distanz_typ']})")
+                        st.write(f"  zu Fuss: {info['zeit_fuss_min']} min | Velo: {info['zeit_velo_min']} min")
                 
                 st.write("**Luftlinien-Distanzen zu POIs:**")
                 st.write("🏫 Nächste Schule: **450 m**")

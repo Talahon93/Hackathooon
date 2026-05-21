@@ -39,7 +39,7 @@ def create_interactive_map(wohnort_koordinaten=None, poi_df=None, karten_stil="C
             # HTML für das Popup, das beim Klicken auf den Punkt erscheint
             popup_html = f"""
             <b>{row.get('name', 'Unbekannter POI')}</b><br>
-            Kategorie: {row.get('category', 'Unbekannt')}<br>
+            Kategorie: {row.get('kategorie', 'Unbekannt')}<br>
             Score: {score:.1f}
             """
             
