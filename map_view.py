@@ -10,10 +10,10 @@ def get_color_by_score(score):
     else:
         return "red"
 
-def create_interactive_map(wohnort_koordinaten=None, poi_df=None, karten_stil="CartoDB dark_matter"):
+def create_interactive_map(wohnort_koordinaten=None, poi_df=None, karten_stil="CartoDB positron"):
     """
     Generiert die interaktive Karte.
-    Nutzt 'CartoDB dark_matter', um zum Dark-Theme des Frontends zu passen.
+    Nutzt 'CartoDB positron', um zum Light-Theme des Frontends zu passen.
     """
     # Falls keine Koordinaten übergeben wurden, Zürich (HB) als Standard verwenden
     if not wohnort_koordinaten:
