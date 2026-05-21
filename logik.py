@@ -85,18 +85,9 @@ def filtere_pois_nach_radius(
 
 # ── 3. Strassennetz via OSMnx API laden (gecacht) ─────────────────────────────
 @st.cache_resource
-def lade_strassennetz(lat: float, lon: float, radius: int):
-    """
-    Laedt das Fussgaenger-Strassennetz von OpenStreetMap via OSMnx.
-    Nur beim ersten Aufruf langsam (ca. 10-30s), danach gecacht.
-    Gibt NetworkX-Graph zurueck, oder None bei Fehler.
-    """
+def lade_strassennetz_zuerich():
     try:
-        G = ox.graph_from_point(
-            (lat, lon),
-            dist=radius + 500,
-            network_type="walk"
-        )
+        G = ox.graph_from_place("Zürich, Switzerland", network_type="walk")
         return G
     except Exception as e:
         print(f"[logik] Strassennetz konnte nicht geladen werden: {e}")
@@ -119,7 +110,7 @@ def berechne_distanzen(
         return df
 
     df = df.copy()
-    G  = lade_strassennetz(lat, lon, radius)
+    G = lade_strassennetz_zuerich()
 
     if G is None:
         st.warning("Strassennetz nicht verfuegbar - Luftlinie wird verwendet.")
@@ -129,22 +120,26 @@ def berechne_distanzen(
 
     ursprung = ox.distance.nearest_nodes(G, lon, lat)
 
+    # Alle Zielknoten auf einmal bestimmen
+    ziel_knoten = ox.distance.nearest_nodes(
+        G,
+        df["lon"].tolist(),
+        df["lat"].tolist()
+    )
+
+    # Ein einziger Dijkstra-Aufruf vom Ursprung zu allen Knoten
+    alle_distanzen = nx.single_source_dijkstra_path_length(
+        G, ursprung, weight="length"
+    )
+
     distanzen = []
     typen     = []
 
-    for _, row in df.iterrows():
-        try:
-            ziel = ox.distance.nearest_nodes(G, row["lon"], row["lat"])
-            dist = nx.shortest_path_length(G, ursprung, ziel, weight="length")
-            distanzen.append(round(dist))
+    for ziel, (_, row) in zip(ziel_knoten, df.iterrows()):
+        if ziel in alle_distanzen:
+            distanzen.append(round(alle_distanzen[ziel]))
             typen.append("Strasse")
-
-        except nx.NetworkXNoPath:
-            distanzen.append(round(row["luftlinie_m"]))
-            typen.append("Luftlinie")
-
-        except Exception as e:
-            print(f"[logik] Fehler bei '{row['name']}': {e}")
+        else:
             distanzen.append(round(row["luftlinie_m"]))
             typen.append("Luftlinie")
 
@@ -152,7 +147,6 @@ def berechne_distanzen(
     df["distanz_typ"] = typen
 
     return df.sort_values("distanz_m").reset_index(drop=True)
-
 
 # ── 5. Reisezeiten berechnen ──────────────────────────────────────────────────
 def berechne_reisezeiten(df: pd.DataFrame) -> pd.DataFrame:
