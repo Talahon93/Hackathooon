@@ -103,6 +103,7 @@ def render_main_content(user_inputs):
             
             for kat, info in details.items():
                 if info["naechster_m"]:
+                    anzeige_name = "ÖV" if kat == "oev" else kat.capitalize()
                     st.write(f"**{kat.capitalize()}**: {info['naechster_name']} — {info['naechster_m']} m ({info['distanz_typ']})")
                     
                     auswahl = user_inputs["transport_mode"]
@@ -114,8 +115,6 @@ def render_main_content(user_inputs):
                     elif auswahl == "Auto":
                         st.write(f"Zeit mit dem Auto: {info['zeit_auto_min']} min")
             
-            st.divider()
-            st.caption("Erweiterung (Geplant): Distanz entlang des Strassennetzes (Fuss, Fahrrad, Auto).")
         else:
             # Das 'else' muss auf der exakt gleichen Höhe sein wie das 'if'
             st.write("👈 Klicke auf die Karte, stelle deine Gewichte in der Sidebar ein und klicke auf Berechnen.")
