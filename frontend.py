@@ -89,26 +89,33 @@ def render_main_content(user_inputs):
             neue_lat = st_data["last_clicked"]["lat"]
             neue_lon = st_data["last_clicked"]["lng"]
             
-            # Nur neu laden, wenn sich die Koordinaten geändert haben
+            
             if (neue_lat, neue_lon) != st.session_state.wohnort_coords:
                 st.session_state.wohnort_coords = (neue_lat, neue_lon)
-                st.rerun() # Aktualisiert die App sofort, um das Haus-Icon zu verschieben
+                st.rerun() 
         
     with col_results:
         st.subheader("📊 Auswertung")
         
-        # Logik, wenn der Button gedrückt wurde
         if user_inputs["calculate_triggered"]:
-            st.success("Berechnung läuft...")
-            
+            # Diese Zeile muss nach dem 'if' zwingend eingerückt sein!
             st.metric(label="Personalisierter Wohn-Score", value=f"{gesamt_score} / 100")
+            
             for kat, info in details.items():
                 if info["naechster_m"]:
-                    st.write(f"{kat.capitalize()}: {info['naechster_name']} — {info['naechster_m']} m ({info['distanz_typ']})")
-                    st.write(f"  zu Fuss: {info['zeit_fuss_min']} min | Velo: {info['zeit_velo_min']} min")
+                    st.write(f"**{kat.capitalize()}**: {info['naechster_name']} — {info['naechster_m']} m ({info['distanz_typ']})")
+                    
+                    auswahl = user_inputs["transport_mode"]
+                    
+                    if auswahl == "Zu Fuss":
+                        st.write(f"Zeit zu Fuss: {info['zeit_fuss_min']} min")
+                    elif auswahl == "Fahrrad":
+                        st.write(f"Zeit mit dem Velo: {info['zeit_velo_min']} min")
+                    elif auswahl == "Auto":
+                        st.write(f"Zeit mit dem Auto: {info['zeit_auto_min']} min")
             
             st.divider()
             st.caption("Erweiterung (Geplant): Distanz entlang des Strassennetzes (Fuss, Fahrrad, Auto).")
         else:
-            # NEU: Anpassung des Textes, da Textfeld entfernt wurde
+            # Das 'else' muss auf der exakt gleichen Höhe sein wie das 'if'
             st.write("👈 Klicke auf die Karte, stelle deine Gewichte in der Sidebar ein und klicke auf Berechnen.")
