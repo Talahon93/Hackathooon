@@ -7,11 +7,8 @@ from logik import analysiere_standort
 def render_sidebar():
     st.sidebar.header("Zieleingabe & Mobilität")
     
-    # Startpunkt/Wohnort
-    target_location = st.sidebar.text_input(
-        "Zieladresse oder Ort in Zürich eingeben", 
-        placeholder="z.B. Bahnhofstrasse, Zürich"
-    )
+    # NEU: Text-Input entfernt. Wir fordern den User auf, die Karte zu nutzen.
+    st.sidebar.info("👆 Klicke direkt auf die Karte, um deinen gewünschten Wohnort festzulegen!")
 
     transport_mode = st.sidebar.radio(
         "gewünschtes Fortbewegungsmittel",
@@ -39,7 +36,6 @@ def render_sidebar():
     
     # Alle Daten gesammelt als Dictionary zurückgeben
     return {
-        "location": target_location,
         "transport_mode": transport_mode,
         "weights": {
             "schule": weight_schulen,
@@ -54,55 +50,65 @@ def render_sidebar():
 
 def render_main_content(user_inputs):
     """Rendert den Hauptbereich mit Karte und Resultaten."""
+    
+    # NEU: Session State initialisieren, um den Klick auf die Karte dauerhaft zu speichern
+    if "wohnort_coords" not in st.session_state:
+        st.session_state.wohnort_coords = (47.3769, 8.5417) # Zürich HB als Default
+
     # Layout aufteilen: 2/3 Breite für die Karte, 1/3 für Resultate
     col_map, col_results = st.columns([2, 1])
     
     with col_map:
         st.subheader("🗺️ Kartenansicht")
+        st.caption("Klicke auf einen beliebigen Punkt auf der Karte, um den Wohnort dorthin zu verschieben.")
         
-        # Standardkoordinaten (Zürich)
-        wohnort_koordinaten = (47.3769, 8.5417)
-        poi_daten = None
+        pois_df = None
+        gesamt_score = 0
+        details = {}
         
-        # Wenn der Benutzer auf "Berechnen" geklickt und ein Ort eingegeben hat, Dummy-Daten generieren
-        if user_inputs["calculate_triggered"] and user_inputs["location"]:
-            # NEU
+        # Wenn der Benutzer auf "Berechnen" geklickt hat
+        if user_inputs["calculate_triggered"]:
+            # NEU: Wir nutzen die Koordinaten aus dem Session State
             pois_df, gesamt_score, details = analysiere_standort(
-                lat=wohnort_koordinaten[0],
-                lon=wohnort_koordinaten[1],
+                lat=st.session_state.wohnort_coords[0],
+                lon=st.session_state.wohnort_coords[1],
                 radius=1000,
-                gewichtung=user_inputs["weights"]   # kommt direkt aus render_sidebar()
+                gewichtung=user_inputs["weights"]   
             )
             
-        # 1. Deine Funktion aufrufen, um die Karte zu generieren
-        # NEU:
-        karte = create_interactive_map(wohnort_koordinaten=wohnort_koordinaten, poi_df=pois_df)        
+        # 1. Karte generieren (immer mit den Koordinaten aus dem Session State!)
+        # NEU: Wir übergeben auch 'details', damit die Karte die echten Farben (Scores) berechnen kann
+        karte = create_interactive_map(wohnort_koordinaten=st.session_state.wohnort_coords, poi_df=pois_df, details=details)   
+        
         # 2. Die Leaflet-Karte in Streamlit rendern
-        st_folium(karte, width=700, height=500, returned_objects=[])
+        # NEU: returned_objects=["last_clicked"] fängt Klicks des Users ab
+        st_data = st_folium(karte, width=700, height=500, returned_objects=["last_clicked"])
+        
+        # NEU: Klick-Logik – wenn der User klickt, updaten wir die Koordinaten und laden neu
+        if st_data and st_data.get("last_clicked"):
+            neue_lat = st_data["last_clicked"]["lat"]
+            neue_lon = st_data["last_clicked"]["lng"]
+            
+            # Nur neu laden, wenn sich die Koordinaten geändert haben
+            if (neue_lat, neue_lon) != st.session_state.wohnort_coords:
+                st.session_state.wohnort_coords = (neue_lat, neue_lon)
+                st.rerun() # Aktualisiert die App sofort, um das Haus-Icon zu verschieben
         
     with col_results:
         st.subheader("📊 Auswertung")
         
         # Logik, wenn der Button gedrückt wurde
         if user_inputs["calculate_triggered"]:
-            if not user_inputs["location"]:
-                st.warning("Bitte gib zuerst einen Zielort in der Sidebar ein.")
-            else:
-                st.success("Berechnung läuft...")
-                
-                # NEU:
-                st.metric(label="Personalisierter Wohn-Score", value=f"{gesamt_score} / 100")
-                for kat, info in details.items():
-                    if info["naechster_m"]:
-                        st.write(f"{kat}: {info['naechster_name']} — {info['naechster_m']} m ({info['distanz_typ']})")
-                        st.write(f"  zu Fuss: {info['zeit_fuss_min']} min | Velo: {info['zeit_velo_min']} min")
-                
-                st.write("**Luftlinien-Distanzen zu POIs:**")
-                st.write("🏫 Nächste Schule: **450 m**")
-                st.write("🌳 Nächster Park: **1.2 km**")
-                
-                # Hinweis für die geplante Erweiterung
-                st.divider()
-                st.caption("Erweiterung (Geplant): Distanz entlang des Strassennetzes (Fuss, Fahrrad, Auto).")
+            st.success("Berechnung läuft...")
+            
+            st.metric(label="Personalisierter Wohn-Score", value=f"{gesamt_score} / 100")
+            for kat, info in details.items():
+                if info["naechster_m"]:
+                    st.write(f"{kat.capitalize()}: {info['naechster_name']} — {info['naechster_m']} m ({info['distanz_typ']})")
+                    st.write(f"  zu Fuss: {info['zeit_fuss_min']} min | Velo: {info['zeit_velo_min']} min")
+            
+            st.divider()
+            st.caption("Erweiterung (Geplant): Distanz entlang des Strassennetzes (Fuss, Fahrrad, Auto).")
         else:
-            st.write("👈 Stelle deine Gewichte in der Sidebar ein und klicke auf Berechnen.")
+            # NEU: Anpassung des Textes, da Textfeld entfernt wurde
+            st.write("👈 Klicke auf die Karte, stelle deine Gewichte in der Sidebar ein und klicke auf Berechnen.")

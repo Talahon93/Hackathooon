@@ -7,13 +7,13 @@ import streamlit as st
 import os
 
 # ── Mapping: Frontend-Keys -> CSV-Kategorien ──────────────────────────────────
-# frontend.py gibt diese Keys zurueck: "schule", "einkaufen", "oev", "ruhe"
-# Das CSV hat diese Kategorien:        "Schule", "Supermarkt", "Oeffentlicher Verkehr", "Gruenflaeche"
 KATEGORIE_MAPPING = {
-    "schule":    "Schule",
-    "einkaufen": "Supermarkt",
-    "oev":       "Oeffentlicher Verkehr",
-    "ruhe":      "Gruenflaeche",
+    "schule":     "Schule",
+    "supermarkt": "Supermarkt",
+    "park":       "Gruenflaeche",
+    "oev":        "Oeffentlicher Verkehr",
+    "restaurant": "Restaurant", # NEU hinzugefügt
+    "spital":     "Spital",     # NEU hinzugefügt
 }
 
 # Pfad zur CSV-Datei (relativ zu logik.py)
