@@ -6,7 +6,9 @@ from logik import analysiere_standort
 
 def render_sidebar():
     st.sidebar.header("Zieleingabe & Mobilität")
-    st.sidebar.info("👆 Klicke direkt auf die Karte, um deinen gewünschten Wohnort festzulegen!")
+
+    # NEU: Reset-Button direkt unter der Info-Box
+    reset_btn = st.sidebar.button("Ansicht zurücksetzen", use_container_width=True)
 
     transport_mode = st.sidebar.radio(
         "gewünschtes Fortbewegungsmittel",
@@ -82,7 +84,8 @@ def render_sidebar():
     return {
         "transport_mode": transport_mode,
         "weights": weights,
-        "calculate_triggered": calculate_btn
+        "calculate_triggered": calculate_btn,
+        "reset_triggered": reset_btn # NEU: Reset-Status übergeben
     }
 
 
@@ -96,6 +99,13 @@ def render_main_content(user_inputs):
         st.session_state.details = {}
     if "gesamt_score" not in st.session_state:
         st.session_state.gesamt_score = None   # NEU: Score bleibt nach Map-Klick erhalten
+
+    # NEU: Logik für den Reset-Button (alles leeren und neu laden)
+    if user_inputs.get("reset_triggered"):
+        st.session_state.wohnort_coords = (47.3769, 8.5417)
+        st.session_state.details = {}
+        st.session_state.gesamt_score = None
+        st.rerun() # Lädt die App sofort neu
 
     col_map, col_results = st.columns([2, 1])
 
