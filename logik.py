@@ -12,37 +12,29 @@ KATEGORIE_MAPPING = {
     "supermarkt": "Supermarkt",
     "park":       "Gruenflaeche",
     "oev":        "Oeffentlicher Verkehr",
-    "restaurant": "Restaurant", # NEU hinzugefügt
-    "spital":     "Spital",     # NEU hinzugefügt
+    "restaurant": "Restaurant",
+    "spital":     "Spital",
 }
 
-# Pfad zur CSV-Datei (relativ zu logik.py)
 CSV_PFAD = os.path.join(os.path.dirname(__file__), "data", "poi_zuerich.csv")
 
 
 # ── 1. POIs aus lokalem CSV laden ─────────────────────────────────────────────
 @st.cache_data
 def lade_pois_csv() -> pd.DataFrame:
-    """
-    Laedt alle POIs aus data/poi_zuerich.csv.
-    Gibt DataFrame zurueck mit Spalten: kategorie, name, lat, lon
-    """
     if not os.path.exists(CSV_PFAD):
         st.error(f"CSV nicht gefunden: {CSV_PFAD}")
         return pd.DataFrame()
 
     df = pd.read_csv(CSV_PFAD, encoding="utf-8")
-
     df = df.rename(columns={
         "Name":        "name",
         "Kategorie":   "kategorie",
         "Breitengrad": "lat",
         "Laengengrad": "lon",
     })
-
     df = df.dropna(subset=["lat", "lon"])
     df = df[(df["lat"] != 0) & (df["lon"] != 0)]
-
     return df.reset_index(drop=True)
 
 
@@ -54,11 +46,6 @@ def filtere_pois_nach_radius(
     radius: int,
     gewichtung: dict
 ) -> pd.DataFrame:
-    """
-    Behaelt nur POIs:
-    - deren Kategorie in der Gewichtung aktiv ist (Wert > 0)
-    - die per Luftlinie innerhalb von 2x Radius liegen (schneller Vorfilter)
-    """
     if alle_pois.empty:
         return pd.DataFrame()
 
@@ -73,7 +60,6 @@ def filtere_pois_nach_radius(
     if df.empty:
         return pd.DataFrame()
 
-    # Luftlinien-Vorfilter: 2x Radius, damit Strassenrouten vollstaendig erfasst werden
     df["luftlinie_m"] = df.apply(
         lambda row: geodesic((lat, lon), (row["lat"], row["lon"])).meters,
         axis=1
@@ -83,7 +69,7 @@ def filtere_pois_nach_radius(
     return df.reset_index(drop=True)
 
 
-# ── 3. Strassennetz via OSMnx API laden (gecacht) ─────────────────────────────
+# ── 3. Strassennetz via OSMnx laden (gecacht) ─────────────────────────────────
 @st.cache_resource
 def lade_strassennetz_zuerich():
     try:
@@ -101,11 +87,6 @@ def berechne_distanzen(
     lon: float,
     radius: int
 ) -> pd.DataFrame:
-    """
-    Berechnet Distanz entlang des Strassennetzes (zu Fuss) fuer jeden POI.
-    Fallback auf Luftlinie wenn ein POI nicht erreichbar ist.
-    Neue Spalten: distanz_m, distanz_typ
-    """
     if df.empty:
         return df
 
@@ -118,23 +99,11 @@ def berechne_distanzen(
         df["distanz_typ"] = "Luftlinie"
         return df.sort_values("distanz_m").reset_index(drop=True)
 
-    ursprung = ox.distance.nearest_nodes(G, lon, lat)
+    ursprung    = ox.distance.nearest_nodes(G, lon, lat)
+    ziel_knoten = ox.distance.nearest_nodes(G, df["lon"].tolist(), df["lat"].tolist())
+    alle_distanzen = nx.single_source_dijkstra_path_length(G, ursprung, weight="length")
 
-    # Alle Zielknoten auf einmal bestimmen
-    ziel_knoten = ox.distance.nearest_nodes(
-        G,
-        df["lon"].tolist(),
-        df["lat"].tolist()
-    )
-
-    # Ein einziger Dijkstra-Aufruf vom Ursprung zu allen Knoten
-    alle_distanzen = nx.single_source_dijkstra_path_length(
-        G, ursprung, weight="length"
-    )
-
-    distanzen = []
-    typen     = []
-
+    distanzen, typen = [], []
     for ziel, (_, row) in zip(ziel_knoten, df.iterrows()):
         if ziel in alle_distanzen:
             distanzen.append(round(alle_distanzen[ziel]))
@@ -145,16 +114,11 @@ def berechne_distanzen(
 
     df["distanz_m"]   = distanzen
     df["distanz_typ"] = typen
-
     return df.sort_values("distanz_m").reset_index(drop=True)
+
 
 # ── 5. Reisezeiten berechnen ──────────────────────────────────────────────────
 def berechne_reisezeiten(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Berechnet Reisezeit in Minuten basierend auf distanz_m.
-    Geschwindigkeiten: Fuss 5 km/h, Velo 15 km/h, Auto 30 km/h (Stadtverkehr)
-    Neue Spalten: zeit_fuss_min, zeit_velo_min, zeit_auto_min
-    """
     if df.empty or "distanz_m" not in df.columns:
         return df
 
@@ -162,21 +126,14 @@ def berechne_reisezeiten(df: pd.DataFrame) -> pd.DataFrame:
     df["zeit_fuss_min"] = (df["distanz_m"] / 1000 / 5  * 60).round(1)
     df["zeit_velo_min"] = (df["distanz_m"] / 1000 / 15 * 60).round(1)
     df["zeit_auto_min"] = (df["distanz_m"] / 1000 / 30 * 60).round(1)
-
     return df
 
 
 # ── 6. Score berechnen ────────────────────────────────────────────────────────
 def berechne_score(df: pd.DataFrame, gewichtung: dict) -> tuple[float, dict]:
     """
-    Berechnet Gesamt-Score (0-100) basierend auf Strassendistanz und Gewichtung.
-
-    Scoring-Formel pro Kategorie:
-      <= 200m   -> 100 Punkte
-      200-2000m -> linear abnehmend
-      >= 2000m  -> 0 Punkte
-
-    Gesamtscore = gewichteter Durchschnitt aller Kategorie-Scores.
+    NEU: details[kat]["top3"] enthaelt die 3 naechsten POIs pro Kategorie.
+    Diese Liste wird von map_view.py benoetigt um die Marker zu zeichnen.
     """
     DIST_BEST = 200
     DIST_MAX  = 2000
@@ -192,7 +149,7 @@ def berechne_score(df: pd.DataFrame, gewichtung: dict) -> tuple[float, dict]:
         if not csv_kat:
             continue
 
-        kat_df = df[df["kategorie"] == csv_kat]
+        kat_df = df[df["kategorie"] == csv_kat].copy()
 
         if kat_df.empty or gewicht == 0:
             details[frontend_key] = {
@@ -204,10 +161,29 @@ def berechne_score(df: pd.DataFrame, gewichtung: dict) -> tuple[float, dict]:
                 "zeit_velo_min":  None,
                 "zeit_auto_min":  None,
                 "csv_kategorie":  csv_kat,
+                "top3":           [],          # NEU: leere Liste als Fallback
             }
             continue
 
-        beste = kat_df.loc[kat_df["distanz_m"].idxmin()]
+        # NEU: Top 3 naechste POIs dieser Kategorie
+        top3_df = kat_df.nsmallest(3, "distanz_m")
+
+        top3 = []
+        for _, row in top3_df.iterrows():
+            top3.append({
+                "name":          row["name"],
+                "lat":           row["lat"],
+                "lon":           row["lon"],
+                "distanz_m":     int(row["distanz_m"]),
+                "distanz_typ":   row.get("distanz_typ", "-"),
+                "zeit_fuss_min": row.get("zeit_fuss_min"),
+                "zeit_velo_min": row.get("zeit_velo_min"),
+                "zeit_auto_min": row.get("zeit_auto_min"),
+                "csv_kategorie": csv_kat,
+            })
+
+        # Nächster POI (Platz 1) für Score und Auswertungstext
+        beste = top3_df.iloc[0]
         dist  = beste["distanz_m"]
 
         if dist <= DIST_BEST:
@@ -226,6 +202,7 @@ def berechne_score(df: pd.DataFrame, gewichtung: dict) -> tuple[float, dict]:
             "zeit_velo_min":  beste.get("zeit_velo_min"),
             "zeit_auto_min":  beste.get("zeit_auto_min"),
             "csv_kategorie":  csv_kat,
+            "top3":           top3,            # NEU: wird von map_view.py gezeichnet
         }
 
     gesamt = sum(
@@ -244,32 +221,6 @@ def analysiere_standort(
     radius: int,
     gewichtung: dict
 ) -> tuple[pd.DataFrame, float, dict]:
-    """
-    Einziger Aufruf fuer app.py / frontend.py.
-
-    Parameter:
-        lat, lon   : Koordinaten des Wohnorts
-        radius     : Suchradius in Metern
-        gewichtung : {"schule": 80, "einkaufen": 50, "oev": 70, "ruhe": 30}
-
-    Rueckgabe:
-        pois_df      : DataFrame mit allen POIs inkl. Distanzen und Zeiten
-        gesamt_score : Gewichteter Gesamtscore (0-100)
-        details      : Pro Kategorie: score, naechster_m, naechster_name,
-                       distanz_typ, zeit_fuss_min, zeit_velo_min, zeit_auto_min
-
-    Beispiel details-Eintrag:
-        "schule": {
-            "score": 85.0,
-            "naechster_m": 320,
-            "naechster_name": "Primarschule Zuerich",
-            "distanz_typ": "Strasse",
-            "zeit_fuss_min": 3.8,
-            "zeit_velo_min": 1.3,
-            "zeit_auto_min": 0.6,
-            "csv_kategorie": "Schule",
-        }
-    """
     alle_pois = lade_pois_csv()
 
     if alle_pois.empty:
