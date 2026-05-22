@@ -55,6 +55,11 @@ def render_main_content(user_inputs):
     if "wohnort_coords" not in st.session_state:
         st.session_state.wohnort_coords = (47.3769, 8.5417) # Zürich HB als Default
 
+    if "details" not in st.session_state:
+        st.session_state.details = {}
+    if "gesamt_score" not in st.session_state:
+        st.session_state.gesamt_score = None
+
     # Layout aufteilen: 2/3 Breite für die Karte, 1/3 für Resultate
     col_map, col_results = st.columns([2, 1])
     
@@ -67,18 +72,19 @@ def render_main_content(user_inputs):
         details = {}
         
         # Wenn der Benutzer auf "Berechnen" geklickt hat
+
         if user_inputs["calculate_triggered"]:
-            # NEU: Wir nutzen die Koordinaten aus dem Session State
-            pois_df, gesamt_score, details = analysiere_standort(
-                lat=st.session_state.wohnort_coords[0],
+            pois_df, gesamt_score, details = analysiere_standort(lat=st.session_state.wohnort_coords[0],
                 lon=st.session_state.wohnort_coords[1],
                 radius=1000,
-                gewichtung=user_inputs["weights"]   
+                gewichtung=user_inputs["weights"]
             )
+            st.session_state.details = details
+            st.session_state.gesamt_score = gesamt_score
             
         # 1. Karte generieren (immer mit den Koordinaten aus dem Session State!)
         # NEU: Wir übergeben auch 'details', damit die Karte die echten Farben (Scores) berechnen kann
-        karte = create_interactive_map(wohnort_koordinaten=st.session_state.wohnort_coords, poi_df=pois_df, details=details)   
+        karte = create_interactive_map(wohnort_koordinaten=st.session_state.wohnort_coords, details=st.session_state.details)
         
         # 2. Die Leaflet-Karte in Streamlit rendern
         # NEU: returned_objects=["last_clicked"] fängt Klicks des Users ab
