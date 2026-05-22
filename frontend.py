@@ -16,29 +16,73 @@ def render_sidebar():
 
     st.sidebar.divider()
     st.sidebar.header("⚖️ Gewichtungssystem")
-    st.sidebar.write("Wie wichtig sind dir folgende Orte?")
-
-    weight_schulen      = st.sidebar.slider("Schulen",           0, 100, 50, step=25)
-    weight_supermaerkte = st.sidebar.slider("Supermärkte",       0, 100, 50, step=25)
-    weight_parks        = st.sidebar.slider("Grünflächen",       0, 100, 50, step=25)
-    weight_anbindung    = st.sidebar.slider("ÖV-Anbindung",      0, 100, 50, step=25)
-    weight_restaurants  = st.sidebar.slider("Restaurants & Cafés", 0, 100, 50, step=25)
-    weight_spitaeler    = st.sidebar.slider("Spitäler & Ärzte",  0, 100, 50, step=25)
+    persona = st.sidebar.selectbox(
+        "Wähle dein Profil (Persona):",
+        options=[
+            "Junge Familie mit kleinen Kindern",
+            "Studenten WG",
+            "Rentnerpaar",
+            "Manuell (Eigene Gewichtung)"
+        ]
+    )
+    
+    # Dictionary für die Gewichte initialisieren
+    weights = {}
+    
+    # NEU: Logik für die einzelnen Personas
+    if persona == "Junge Familie mit kleinen Kindern":
+        st.sidebar.markdown("**Voreingestellte Prioritäten für Familien:**")
+        st.sidebar.caption("🏫 Schulen: **100** | 🌳 Grünflächen: **100**")
+        st.sidebar.caption("🛒 Supermärkte: **75** | 🚆 ÖV & 🏥 Spitäler: **50**")
+        st.sidebar.caption("🍽️ Restaurants: **0**")
+        
+        # Fest definierte Gewichte übergeben
+        weights = {"schule": 100, "supermarkt": 75, "park": 100, "oev": 50, "restaurant": 0, "spital": 50}
+        
+    elif persona == "Studenten WG":
+        st.sidebar.markdown("**Voreingestellte Prioritäten für Studenten:**")
+        st.sidebar.caption("🚆 ÖV-Anbindung: **100**")
+        st.sidebar.caption("🛒 Supermärkte: **50** | 🏫 Schulen & 🌳 Grünflächen: **25**")
+        st.sidebar.caption("🍽️ Restaurants: **25** | 🏥 Spitäler: **0**")
+        
+        weights = {"schule": 25, "supermarkt": 50, "park": 25, "oev": 100, "restaurant": 25, "spital": 0}
+        
+    elif persona == "Rentnerpaar":
+        st.sidebar.markdown("**Voreingestellte Prioritäten für Senioren:**")
+        st.sidebar.caption("🚆 ÖV: **100** | 🛒 Supermärkte, 🍽️ Restaurants & 🏥 Spitäler: **75**")
+        st.sidebar.caption("🌳 Grünflächen: **50** | 🏫 Schulen: **0**")
+        
+        weights = {"schule": 0, "supermarkt": 75, "park": 50, "oev": 100, "restaurant": 75, "spital": 75}
+        
+    elif persona == "Manuell (Eigene Gewichtung)":
+        st.sidebar.write("Stelle deine Gewichte individuell ein (0-100):")
+        # Die bewährten Slider mit den 25er-Schritten erscheinen NUR hier
+        weight_schulen = st.sidebar.slider("Schulen", 0, 100, 50, step=25)
+        weight_supermaerkte = st.sidebar.slider("Supermärkte", 0, 100, 50, step=25)
+        weight_parks = st.sidebar.slider("Grünflächen", 0, 100, 50, step=25)
+        weight_anbindung = st.sidebar.slider("ÖV-Anbindung", 0, 100, 50, step=25)
+        weight_restaurants = st.sidebar.slider("Restaurants & Cafés", 0, 100, 50, step=25)
+        weight_spitäler = st.sidebar.slider("Spitäler & Ärzte", 0, 100, 50, step=25)
+        
+        weights = {
+            "schule": weight_schulen,
+            "supermarkt": weight_supermaerkte,
+            "park": weight_parks,
+            "oev": weight_anbindung,
+            "restaurant": weight_restaurants,
+            "spital": weight_spitäler
+        }
 
     st.sidebar.divider()
+    
+    # Berechnen-Button
     calculate_btn = st.sidebar.button("Distanz & Score berechnen", type="primary", use_container_width=True)
-
+    
+    # Alle Daten gesammelt als Dictionary zurückgeben
     return {
         "transport_mode": transport_mode,
-        "weights": {
-            "schule":     weight_schulen,
-            "supermarkt": weight_supermaerkte,
-            "park":       weight_parks,
-            "oev":        weight_anbindung,
-            "restaurant": weight_restaurants,
-            "spital":     weight_spitaeler,
-        },
-        "calculate_triggered": calculate_btn,
+        "weights": weights,
+        "calculate_triggered": calculate_btn
     }
 
 
@@ -107,7 +151,7 @@ def render_main_content(user_inputs):
                     if auswahl == "Zu Fuss":
                         st.write(f"Zeit zu Fuss: {info['zeit_fuss_min']} min")
                     elif auswahl == "Fahrrad":
-                        st.write(f"Zeit mit dem Velo: {info['zeit_velo_min']} min")
+                        st.write(f"Zeit mit dem Fahrrad: {info['zeit_velo_min']} min")
                     elif auswahl == "Auto":
                         st.write(f"Zeit mit dem Auto: {info['zeit_auto_min']} min")
         else:
