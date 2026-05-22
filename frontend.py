@@ -17,7 +17,7 @@ def render_sidebar():
     )
 
     st.sidebar.divider()
-    st.sidebar.header("⚖️ Gewichtungssystem")
+    st.sidebar.header("Gewichtungssystem")
     persona = st.sidebar.selectbox(
         "Wähle dein Profil (Persona):",
         options=[
@@ -110,7 +110,7 @@ def render_main_content(user_inputs):
     col_map, col_results = st.columns([2, 1])
 
     with col_map:
-        st.subheader("🗺️ Kartenansicht")
+        st.subheader("Kartenansicht")
 
         # Berechnung nur wenn Button gedrückt
         if user_inputs["calculate_triggered"]:
@@ -141,7 +141,7 @@ def render_main_content(user_inputs):
                 st.rerun()
 
     with col_results:
-        st.subheader("📊 Auswertung")
+        st.subheader("Auswertung")
 
         # NEU: Ergebnisse aus Session State lesen (nicht aus lokalen Variablen)
         if st.session_state.gesamt_score is not None:
