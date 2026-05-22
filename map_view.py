@@ -11,7 +11,6 @@ def get_color_by_score(score):
     else:
         return "red"
 
-# Mapping der CSV-Kategorien zu Emojis
 EMOJI_MAPPING = {
     "Schule":               "🏫",
     "Supermarkt":           "🛒",
@@ -22,28 +21,22 @@ EMOJI_MAPPING = {
 }
 
 def create_interactive_map(wohnort_koordinaten=None, poi_df=None, details=None, karten_zoom=14):
-    # Standard-Koordinaten (Zürich HB), falls keine übergeben werden
     if not wohnort_koordinaten:
         wohnort_koordinaten = (47.3769, 8.5417)
 
-    # Karte mit dem gespeicherten Zoom-Level initialisieren
     m = folium.Map(location=wohnort_koordinaten, zoom_start=karten_zoom, tiles=None)
 
-    # NEU: Ein HTML-Span für die Standard-Karte (CartoDB), um den Text zu kürzen und zu verschieben!
     cartodb_attr = '<span style="display: inline-block; margin-right: 60px;">&copy; OpenStreetMap, CartoDB</span>'
 
-    # Helles Design als Standard-Layer (mit neuem, kürzeren Text)
     folium.TileLayer(
         'CartoDB positron', 
         name='Helles Design (Standard)', 
-        attr=cartodb_attr, # Hier weisen wir unseren eigenen Text zu
+        attr=cartodb_attr,
         control=True
     ).add_to(m)
 
-    # Ein HTML-Span mit 'margin-right' für Swisstopo
     swisstopo_attr = '<span style="display: inline-block; margin-right: 60px;">&copy; swisstopo</span>'
 
-    # Swisstopo Orthofoto (Luftbild)
     swisstopo_ortho_url = 'https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.swissimage-product/default/current/3857/{z}/{x}/{y}.jpeg'
     folium.TileLayer(
         tiles=swisstopo_ortho_url,
@@ -53,7 +46,6 @@ def create_interactive_map(wohnort_koordinaten=None, poi_df=None, details=None, 
         show=False
     ).add_to(m)
 
-    # Marker für den ausgewählten Wohnort (Haus) hinzufügen
     folium.Marker(
         location=wohnort_koordinaten,
         popup="<b>Ausgewählter Wohnort</b>",
@@ -61,7 +53,6 @@ def create_interactive_map(wohnort_koordinaten=None, poi_df=None, details=None, 
         icon=folium.Icon(color="blue", icon="home", prefix="fa")
     ).add_to(m)
 
-    # POIs aus details["top3"] zeichnen
     if details:
         for frontend_key, info in details.items():
             csv_kat      = info.get("csv_kategorie", "")
@@ -71,7 +62,6 @@ def create_interactive_map(wohnort_koordinaten=None, poi_df=None, details=None, 
             top3         = info.get("top3", [])
 
             for i, poi in enumerate(top3):
-                # Erster POI (nächster) → farbiger Rand, andere ausgegraut
                 if i == 0:
                     rand_farbe   = marker_farbe
                     hintergrund  = "white"
@@ -113,6 +103,5 @@ def create_interactive_map(wohnort_koordinaten=None, poi_df=None, details=None, 
                     icon=DivIcon(html=icon_html, icon_anchor=(15, 15))
                 ).add_to(m)
 
-    # Layer-Control unten links positionieren
     folium.LayerControl(position='bottomleft').add_to(m)
     return m
