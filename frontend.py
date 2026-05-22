@@ -7,7 +7,6 @@ from logik import analysiere_standort
 def render_sidebar():
     st.sidebar.header("Zieleingabe & Mobilität")
 
-    # NEU: Reset-Button direkt unter der Info-Box
     reset_btn = st.sidebar.button("Ansicht zurücksetzen", use_container_width=True)
 
     transport_mode = st.sidebar.radio(
@@ -28,17 +27,14 @@ def render_sidebar():
         ]
     )
     
-    # Dictionary für die Gewichte initialisieren
     weights = {}
     
-    # NEU: Logik für die einzelnen Personas
     if persona == "Junge Familie mit kleinen Kindern":
         st.sidebar.markdown("**Voreingestellte Prioritäten für Familien:**")
         st.sidebar.caption("🏫 Schulen: **100** | 🌳 Grünflächen: **100**")
         st.sidebar.caption("🛒 Supermärkte: **75** | 🚆 ÖV & 🏥 Spitäler: **50**")
         st.sidebar.caption("🍽️ Restaurants: **0**")
         
-        # Fest definierte Gewichte übergeben
         weights = {"schule": 100, "supermarkt": 75, "park": 100, "oev": 50, "restaurant": 0, "spital": 50}
         
     elif persona == "Studenten WG":
@@ -58,7 +54,7 @@ def render_sidebar():
         
     elif persona == "Manuell (Eigene Gewichtung)":
         st.sidebar.write("Stelle deine Gewichte individuell ein (0-100):")
-        # Die bewährten Slider mit den 25er-Schritten erscheinen NUR hier
+
         weight_schulen = st.sidebar.slider("Schulen", 0, 100, 50, step=25)
         weight_supermaerkte = st.sidebar.slider("Supermärkte", 0, 100, 50, step=25)
         weight_parks = st.sidebar.slider("Grünflächen", 0, 100, 50, step=25)
@@ -77,30 +73,28 @@ def render_sidebar():
 
     st.sidebar.divider()
     
-    # Berechnen-Button
+
     calculate_btn = st.sidebar.button("Distanz & Score berechnen", type="primary", use_container_width=True)
     
-    # Alle Daten gesammelt als Dictionary zurückgeben
+
     return {
         "transport_mode": transport_mode,
         "weights": weights,
         "calculate_triggered": calculate_btn,
-        "reset_triggered": reset_btn # NEU: Reset-Status übergeben
+        "reset_triggered": reset_btn 
     }
 
 
 def render_main_content(user_inputs):
     """Rendert den Hauptbereich mit Karte und Resultaten."""
 
-    # Session State initialisieren
     if "wohnort_coords" not in st.session_state:
-        st.session_state.wohnort_coords = (47.3769, 8.5417)  # Zürich HB als Default
+        st.session_state.wohnort_coords = (47.3769, 8.5417)
     if "details" not in st.session_state:
         st.session_state.details = {}
     if "gesamt_score" not in st.session_state:
-        st.session_state.gesamt_score = None   # NEU: Score bleibt nach Map-Klick erhalten
+        st.session_state.gesamt_score = None 
 
-    # NEU: Logik für den Reset-Button (alles leeren und neu laden)
     if user_inputs.get("reset_triggered"):
         st.session_state.wohnort_coords = (47.3769, 8.5417)
         st.session_state.details = {}
@@ -112,7 +106,7 @@ def render_main_content(user_inputs):
     with col_map:
         st.subheader("Kartenansicht")
 
-        # Berechnung nur wenn Button gedrückt
+   
         if user_inputs["calculate_triggered"]:
             pois_df, gesamt_score, details = analysiere_standort(
                 lat=st.session_state.wohnort_coords[0],
@@ -120,11 +114,10 @@ def render_main_content(user_inputs):
                 radius=1000,
                 gewichtung=user_inputs["weights"],
             )
-            # NEU: Ergebnisse im Session State speichern, damit sie nach st.rerun() erhalten bleiben
+   
             st.session_state.details      = details
             st.session_state.gesamt_score = gesamt_score
 
-        # Karte immer mit den aktuellen Session-State-Werten rendern
         karte = create_interactive_map(
             wohnort_koordinaten=st.session_state.wohnort_coords,
             details=st.session_state.details,
@@ -143,7 +136,6 @@ def render_main_content(user_inputs):
     with col_results:
         st.subheader("Auswertung")
 
-        # NEU: Ergebnisse aus Session State lesen (nicht aus lokalen Variablen)
         if st.session_state.gesamt_score is not None:
             st.metric(
                 label="Personalisierter Wohn-Score",
