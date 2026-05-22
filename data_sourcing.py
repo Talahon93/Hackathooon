@@ -104,20 +104,21 @@ if __name__ == "__main__":
         df_gesamt = pd.concat(alle_datenframes, ignore_index=True)
         
         # --- DATENBEREINIGUNG (DATA CLEANSING) ---
+        # --- DATENBEREINIGUNG (Korrigiert) ---
         print(f" -> Rohdaten: {len(df_gesamt)} POIs.")
         
-        # 1. Wir trennen die Daten mit echtem Namen von denen ohne Namen ('Unbekannt')
-        df_mit_namen = df_gesamt[df_gesamt['Name'] != 'Unbekannt'].copy()
-        df_ohne_namen = df_gesamt[df_gesamt['Name'] == 'Unbekannt'].copy()
+        # 1. Wir trennen den ÖV von den anderen Kategorien
+        df_oev = df_gesamt[df_gesamt['Kategorie'] == 'Oeffentlicher Verkehr'].copy()
+        df_andere = df_gesamt[df_gesamt['Kategorie'] != 'Oeffentlicher Verkehr'].copy()
         
-        # 2. Wir löschen Duplikate NUR bei den POIs mit echtem Namen 
-        # (Behält nur den ersten Eintrag pro Name und Kategorie)
-        df_mit_namen = df_mit_namen.drop_duplicates(subset=['Name', 'Kategorie'], keep='first')
+        # 2. Wir löschen Duplikate NUR beim ÖV (Bushaltestellen etc.)
+        df_oev = df_oev.drop_duplicates(subset=['Name', 'Kategorie'], keep='first')
         
-        # 3. Wir fügen die bereinigten Daten und die unbekannten wieder zusammen
-        df_gesamt = pd.concat([df_mit_namen, df_ohne_namen], ignore_index=True)
+        # 3. Wir fügen alles wieder zusammen
+        df_gesamt = pd.concat([df_andere, df_oev], ignore_index=True)
         
-        print(f" -> Bereinigte Daten (Duplikate entfernt): {len(df_gesamt)} POIs.")
+        print(f" -> Bereinigte Daten: {len(df_gesamt)} POIs.")
+        # -----------------------------------------
         # -----------------------------------------
         
         datei_pfad_poi = 'data/poi_zuerich.csv'
