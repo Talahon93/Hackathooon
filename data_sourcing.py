@@ -6,7 +6,6 @@ import time
 def poi_zuerich_extrahieren(osm_schluessel, osm_wert, kategorie_name):
     url_overpass = "http://overpass-api.de/api/interpreter"
     
-    # MODIFIKATION: Timeout auf 90 Sekunden erhöht, um dem Server mehr Zeit zu geben
     abfrage = f"""
     [out:json][timeout:90];
     area["name"="Zürich"]["admin_level"="8"]->.suchGebiet;
@@ -57,9 +56,6 @@ def poi_zuerich_extrahieren(osm_schluessel, osm_wert, kategorie_name):
         print(f"Fehler {antwort.status_code} beim Herunterladen von {kategorie_name}.")
         return pd.DataFrame()
 
-# ==========================================
-# HAUPTAUSFÜHRUNG DES SKRIPTS (MAIN)
-# ==========================================
 if __name__ == "__main__":
     
     if not os.path.exists('data'):
@@ -69,9 +65,9 @@ if __name__ == "__main__":
         {'osm_key': 'amenity', 'osm_wert': 'school', 'name_de': 'Schule'},
         {'osm_key': 'shop', 'osm_wert': 'supermarket', 'name_de': 'Supermarkt'},
         {'osm_key': 'leisure', 'osm_wert': 'park', 'name_de': 'Gruenflaeche'},
-        {'osm_key': 'public_transport', 'osm_wert': 'station', 'name_de': 'Oeffentlicher Verkehr'}, # Bahnhöfe
-        {'osm_key': 'highway', 'osm_wert': 'bus_stop', 'name_de': 'Oeffentlicher Verkehr'},         # Bushaltestellen
-        {'osm_key': 'railway', 'osm_wert': 'tram_stop', 'name_de': 'Oeffentlicher Verkehr'},        # Tramhaltestellen
+        {'osm_key': 'public_transport', 'osm_wert': 'station', 'name_de': 'Oeffentlicher Verkehr'}, 
+        {'osm_key': 'highway', 'osm_wert': 'bus_stop', 'name_de': 'Oeffentlicher Verkehr'},         
+        {'osm_key': 'railway', 'osm_wert': 'tram_stop', 'name_de': 'Oeffentlicher Verkehr'},        
         {'osm_key': 'amenity', 'osm_wert': 'restaurant', 'name_de': 'Restaurant'},
         {'osm_key': 'amenity', 'osm_wert': 'hospital', 'name_de': 'Spital'}
     ]
@@ -85,7 +81,6 @@ if __name__ == "__main__":
             alle_datenframes.append(df_temp)
             print(f" -> {len(df_temp)} Punkte für '{kat['name_de']}' gefunden.")
         
-        # MODIFIKATION: Pause auf 8 Sekunden erhöht, um Blockaden zu vermeiden
         print(" -> 8 Sekunden Pause, um den Server zu schonen...")
         time.sleep(8) 
     
@@ -103,32 +98,20 @@ if __name__ == "__main__":
     if alle_datenframes:
         df_gesamt = pd.concat(alle_datenframes, ignore_index=True)
         
-        # --- DATENBEREINIGUNG (DATA CLEANSING) ---
-        # --- DATENBEREINIGUNG (Korrigiert) ---
+
         print(f" -> Rohdaten: {len(df_gesamt)} POIs.")
         
-        # 1. Wir trennen den ÖV von den anderen Kategorien
         df_oev = df_gesamt[df_gesamt['Kategorie'] == 'Oeffentlicher Verkehr'].copy()
         df_andere = df_gesamt[df_gesamt['Kategorie'] != 'Oeffentlicher Verkehr'].copy()
         
-        # 2. Wir löschen Duplikate NUR beim ÖV (Bushaltestellen etc.)
         df_oev = df_oev.drop_duplicates(subset=['Name', 'Kategorie'], keep='first')
         
-        # 3. Wir fügen alles wieder zusammen
         df_gesamt = pd.concat([df_andere, df_oev], ignore_index=True)
         
         print(f" -> Bereinigte Daten: {len(df_gesamt)} POIs.")
-        # -----------------------------------------
-        # -----------------------------------------
+
         
         datei_pfad_poi = 'data/poi_zuerich.csv'
         df_gesamt.to_csv(datei_pfad_poi, index=False, encoding='utf-8')
-    
-    # STRASSENNETZ TEMPORÄR DEAKTIVIERT:
-    # Um das MVP (Minimum Viable Product) zu sichern, berechnen wir zuerst nur 
-    # die Luftliniendistanz (wie im Projektbeschrieb gefordert). 
-    # Das Strassennetz kann später reaktiviert werden, falls noch Zeit bleibt.
-    #
-    # strassennetz_extrahieren() 
     
     print("\nDas Skript ist vollständig durchgelaufen. Die Daten sind bereit für Jascha!")
