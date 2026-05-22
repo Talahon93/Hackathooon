@@ -131,10 +131,7 @@ def berechne_reisezeiten(df: pd.DataFrame) -> pd.DataFrame:
 
 # ── 6. Score berechnen ────────────────────────────────────────────────────────
 def berechne_score(df: pd.DataFrame, gewichtung: dict) -> tuple[float, dict]:
-    """
-    NEU: details[kat]["top3"] enthaelt die 3 naechsten POIs pro Kategorie.
-    Diese Liste wird von map_view.py benoetigt um die Marker zu zeichnen.
-    """
+    
     DIST_BEST = 200
     DIST_MAX  = 2000
 
@@ -161,11 +158,11 @@ def berechne_score(df: pd.DataFrame, gewichtung: dict) -> tuple[float, dict]:
                 "zeit_velo_min":  None,
                 "zeit_auto_min":  None,
                 "csv_kategorie":  csv_kat,
-                "top3":           [],          # NEU: leere Liste als Fallback
+                "top3":           [],          
             }
             continue
 
-        # NEU: Top 3 naechste POIs dieser Kategorie
+        
         top3_df = kat_df.nsmallest(3, "distanz_m")
 
         top3 = []
@@ -182,7 +179,7 @@ def berechne_score(df: pd.DataFrame, gewichtung: dict) -> tuple[float, dict]:
                 "csv_kategorie": csv_kat,
             })
 
-        # Nächster POI (Platz 1) für Score und Auswertungstext
+        
         beste = top3_df.iloc[0]
         dist  = beste["distanz_m"]
 
@@ -202,7 +199,7 @@ def berechne_score(df: pd.DataFrame, gewichtung: dict) -> tuple[float, dict]:
             "zeit_velo_min":  beste.get("zeit_velo_min"),
             "zeit_auto_min":  beste.get("zeit_auto_min"),
             "csv_kategorie":  csv_kat,
-            "top3":           top3,            # NEU: wird von map_view.py gezeichnet
+            "top3":           top3,            
         }
 
     gesamt = sum(
