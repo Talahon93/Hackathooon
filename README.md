@@ -2,19 +2,19 @@ Interaktiver Wohnscore-Planer Zürich
 
 Eine Streamlit-Webanwendung zur Bewertung von Wohnstandorten in Zürich basierend auf persönlichen Gewichtungen und der Naehe zu Points of Interest (POIs).
 Funktionsweise
-Die App berechnet einen personalisierten Wohn-Score (0-100) fuer einen beliebigen Punkt in Zuerich. Der Score basiert darauf, wie nah der gewaehlte Standort an den wichtigsten Alltagszielen liegt, gewichtet nach den eigenen Beduerfnissen.
+Die App berechnet einen personalisierten Wohn-Score (0-100) für einen beliebigen Punkt in Zürich. Der Score basiert darauf, wie nah der gewählte Standort an den wichtigsten Alltagszielen liegt, gewichtet nach den eigenen Bedürfnissen.
 
 Ablauf:
 
 Wohnort auf der Karte anklicken
 Gewichtungen in der Sidebar einstellen
 Auf "Distanz & Score berechnen" klicken
-Score und die naechsten POIs pro Kategorie werden angezeigt
+Score und die nächsten POIs pro Kategorie werden angezeigt
 
 Features
 
 Interaktive Karte: Wohnort per Klick setzen, POIs werden als Emoji-Marker eingeblendet
-Top-3-Marker pro Kategorie: der naechste POI jeder Kategorie ist farbig hervorgehoben, die naechsten zwei werden ausgegraut dargestellt
+Top-3-Marker pro Kategorie: der nächste POI jeder Kategorie ist farbig hervorgehoben, die nächsten zwei werden ausgegraut dargestellt
 Farbkodierung nach Score: gruen (ab 80), orange (50-79), rot (unter 50)
 Gewichtungssystem: jede Kategorie laesst sich von 0 bis 100 gewichten
 Reisezeiten: Anzeige in Minuten zu Fuss, mit dem Velo oder mit dem Auto
