@@ -22,12 +22,12 @@ def render_sidebar():
     st.sidebar.header("⚖️ Gewichtungssystem")
     st.sidebar.write("Wie wichtig sind dir folgende Orte?")
     
-    weight_schulen = st.sidebar.slider("Schulen", 0, 100, 50)
-    weight_supermaerkte = st.sidebar.slider("Supermärkte", 0, 100, 50)
-    weight_parks = st.sidebar.slider("Grünflächen", 0, 100, 50)
-    weight_anbindung = st.sidebar.slider("ÖV-Anbindung", 0, 100, 50)
-    weight_restaurants = st.sidebar.slider("Restaurants & Cafés", 0, 100, 50)
-    weight_spitäler = st.sidebar.slider("Spitäler & Ärzte", 0, 100, 50)
+    weight_schulen = st.sidebar.slider("Schulen", 0, 100, 50, step=25)
+    weight_supermaerkte = st.sidebar.slider("Supermärkte", 0, 100, 50, step=25)
+    weight_parks = st.sidebar.slider("Grünflächen", 0, 100, 50, step=25)
+    weight_anbindung = st.sidebar.slider("ÖV-Anbindung", 0, 100, 50, step=25)
+    weight_restaurants = st.sidebar.slider("Restaurants & Cafés", 0, 100, 50, step=25)
+    weight_spitäler = st.sidebar.slider("Spitäler & Ärzte", 0, 100, 50, step=25)
 
     st.sidebar.divider()
     
