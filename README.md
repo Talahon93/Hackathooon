@@ -18,17 +18,17 @@ Top-3-Marker pro Kategorie: der naechste POI jeder Kategorie ist farbig hervorge
 Farbkodierung nach Score: gruen (ab 80), orange (50-79), rot (unter 50)
 Gewichtungssystem: jede Kategorie laesst sich von 0 bis 100 gewichten
 Reisezeiten: Anzeige in Minuten zu Fuss, mit dem Velo oder mit dem Auto
-Strassennetz-Routing: Distanzen werden ueber das Fusswegnetz berechnet, Fallback auf Luftlinie
+Strassennetz-Routing: Distanzen werden über das Fusswegnetz berechnet, Fallback auf Luftlinie
 Kartenebenen: wechselbar zwischen hellem Design und Swisstopo-Luftbild
 
 POI-Kategorien
 
 Schule Primar- und Sekundarschulen
 Supermarkt Lebensmittelgeschaefte
-Gruenflaeche Parks und Grueanlagen
+Grünflaeche Parks und Grünflächen
 Oeffentl. Verkehr Bahnhoefe, Tram- und Bushaltestellen
 Restaurant Restaurants und Cafes
-Spital Spitaeler und Aerzte
+Spital Spitäler und Ärzte
 
 Scoring-Formel
 
@@ -38,32 +38,28 @@ bis 200 m 100 Punkte
 ab 2000 m 0 Punkte
 Der Gesamtscore ist der gewichtete Durchschnitt aller aktiven Kategorien.
 
-Installation
+Librarries
 
 git clone <https://github.com/Talahon93/Hackathooon.git>
-cd wohnscore-zuerich
-pip install -r requirements.txt
-python data_sourcing.py
-streamlit run app.py
-Abhaengigkeiten
 streamlit
 streamlit-folium
 folium
 pandas
+geopandas
 geopy
 osmnx
 networkx
+overpy
 requests
 
 Projektstruktur
 
-app.py Einstiegspunkt, Streamlit-Konfiguration
-frontend.py Sidebar, Hauptlayout, Session-State-Logik
-logik.py Distanz- und Score-Berechnung, OSMnx-Routing
-map_view.py Folium-Karte mit POI-Markern
-data_sourcing.py POI-Extraktion via OpenStreetMap Overpass API
-data/
-poi_zuerich.csv Lokal gespeicherte POI-Daten
+app.py: Einstiegspunkt, Streamlit-Konfiguration
+frontend.py: Sidebar, Hauptlayout, Session-State-Logik
+logik.py: Distanz- und Score-Berechnung, OSMnx-Routing
+map_view.py: Folium-Karte mit POI-Markern
+data_sourcing.py: POI-Extraktion via OpenStreetMap Overpass API
+data/poi_zuerich.csv: Lokal gespeicherte POI-Daten
 README.md
 
 Datenquellen
