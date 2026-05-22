@@ -111,7 +111,6 @@ def render_main_content(user_inputs):
 
     with col_map:
         st.subheader("🗺️ Kartenansicht")
-        st.caption("Klicke auf einen beliebigen Punkt auf der Karte, um den Wohnort dorthin zu verschieben.")
 
         # Berechnung nur wenn Button gedrückt
         if user_inputs["calculate_triggered"]:
@@ -165,4 +164,4 @@ def render_main_content(user_inputs):
                     elif auswahl == "Auto":
                         st.write(f"Zeit mit dem Auto: {info['zeit_auto_min']} min")
         else:
-            st.write("👈 Klicke auf die Karte, stelle deine Gewichte in der Sidebar ein und klicke auf Berechnen.")
+            st.write("Klicke auf die Karte, stelle deine Gewichte in der Sidebar ein und klicke auf Berechnen.")
