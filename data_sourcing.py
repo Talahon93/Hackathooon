@@ -98,6 +98,30 @@ if __name__ == "__main__":
         print(f"POI-Datenextraktion erfolgreich abgeschlossen!")
         print(f"Insgesamt {len(df_gesamt)} POIs gefunden.")
         print(f"Gespeichert in: {datei_pfad_poi}")
+
+
+    if alle_datenframes:
+        df_gesamt = pd.concat(alle_datenframes, ignore_index=True)
+        
+        # --- DATENBEREINIGUNG (DATA CLEANSING) ---
+        print(f" -> Rohdaten: {len(df_gesamt)} POIs.")
+        
+        # 1. Wir trennen die Daten mit echtem Namen von denen ohne Namen ('Unbekannt')
+        df_mit_namen = df_gesamt[df_gesamt['Name'] != 'Unbekannt'].copy()
+        df_ohne_namen = df_gesamt[df_gesamt['Name'] == 'Unbekannt'].copy()
+        
+        # 2. Wir löschen Duplikate NUR bei den POIs mit echtem Namen 
+        # (Behält nur den ersten Eintrag pro Name und Kategorie)
+        df_mit_namen = df_mit_namen.drop_duplicates(subset=['Name', 'Kategorie'], keep='first')
+        
+        # 3. Wir fügen die bereinigten Daten und die unbekannten wieder zusammen
+        df_gesamt = pd.concat([df_mit_namen, df_ohne_namen], ignore_index=True)
+        
+        print(f" -> Bereinigte Daten (Duplikate entfernt): {len(df_gesamt)} POIs.")
+        # -----------------------------------------
+        
+        datei_pfad_poi = 'data/poi_zuerich.csv'
+        df_gesamt.to_csv(datei_pfad_poi, index=False, encoding='utf-8')
     
     # STRASSENNETZ TEMPORÄR DEAKTIVIERT:
     # Um das MVP (Minimum Viable Product) zu sichern, berechnen wir zuerst nur 
