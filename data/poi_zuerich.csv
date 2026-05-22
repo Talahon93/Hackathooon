@@ -108,7 +108,7 @@ Schule Heumatt,Schule,47.4233025,8.5368576
 Schule Aemtler B,Schule,47.3741105,8.5122282
 Schule Waidhalde,Schule,47.3971493,8.5260507
 Schule Stettbach,Schule,47.4011397,8.5809828
-Schule Riedhof,Schule,47.4081984,8.4869073
+Schule Riedhof,Schule,47.4081984,8.486901
 Schule Nordstern,Schule,47.4157357,8.5514791
 Schule Ilgen,Schule,47.3694512,8.559976
 "Fachschule Viventa, Schulhaus Wipkingen",Schule,47.3922947,8.5227684
@@ -684,6 +684,1173 @@ Zürich Manegg,Oeffentlicher Verkehr,47.3378276,8.5197354
 Zürich Wipkingen,Oeffentlicher Verkehr,47.3930555,8.5293157
 Zürich Bus Station,Oeffentlicher Verkehr,47.3809024,8.537274
 Zürich Hauptbahnhof,Oeffentlicher Verkehr,47.3784953,8.537422
+Zürich Oerlikon,Oeffentlicher Verkehr,47.4114986,8.5441507
+Zürich Hardbrücke,Oeffentlicher Verkehr,47.3851609,8.5173926
+Zürich Hauptbahnhof,Oeffentlicher Verkehr,47.3781008,8.5393635
+Zürich Stadelhofen,Oeffentlicher Verkehr,47.3665643,8.5483858
+Stettbach,Oeffentlicher Verkehr,47.3971522,8.5961074
+Zürich Selnau,Oeffentlicher Verkehr,47.3724695,8.5318556
+Zürich Binz,Oeffentlicher Verkehr,47.3628473,8.5180854
+Zürich Friesenberg,Oeffentlicher Verkehr,47.3648164,8.5075769
+Zürich Triemli,Oeffentlicher Verkehr,47.3649741,8.4953498
+Zürich Giesshübel,Oeffentlicher Verkehr,47.3626083,8.5220149
+Zürich Saalsporthalle,Oeffentlicher Verkehr,47.3580067,8.5218339
+Zürich Brunau,Oeffentlicher Verkehr,47.3515976,8.5262233
+Zürich Leimbach,Oeffentlicher Verkehr,47.3330734,8.5187267
+Zürich Wiedikon,Oeffentlicher Verkehr,47.3717117,8.5230648
+Zürich Enge,Oeffentlicher Verkehr,47.3641833,8.5307605
+Zürich Tiefenbrunnen,Oeffentlicher Verkehr,47.3501172,8.5613415
+Zürich Seebach,Oeffentlicher Verkehr,47.4185872,8.5442186
+Zürich Affoltern,Oeffentlicher Verkehr,47.4209007,8.5081772
+Zürich Altstetten,Oeffentlicher Verkehr,47.3913167,8.4893332
+Zürich Wollishofen,Oeffentlicher Verkehr,47.3477819,8.5337381
+Zürich Schweighof,Oeffentlicher Verkehr,47.3649655,8.5035323
+Zürich Manegg,Oeffentlicher Verkehr,47.3378276,8.5197354
+Zürich Wipkingen,Oeffentlicher Verkehr,47.3930555,8.5293157
+Zürich Bus Station,Oeffentlicher Verkehr,47.3809024,8.537274
+Zürich Hauptbahnhof,Oeffentlicher Verkehr,47.3784953,8.537422
+Güterbahnhof,Oeffentlicher Verkehr,47.3804363,8.5196824
+Bahnhofplatz/HB,Oeffentlicher Verkehr,47.3769147,8.5404941
+Opernhaus,Oeffentlicher Verkehr,47.3654643,8.5475672
+Haldenegg,Oeffentlicher Verkehr,47.3801303,8.5441031
+Rautihalde,Oeffentlicher Verkehr,47.3868223,8.4734249
+Bahnhof Altstetten Nord,Oeffentlicher Verkehr,47.3924939,8.4872596
+Albisriederplatz,Oeffentlicher Verkehr,47.3780501,8.5103941
+Botanischer Garten,Oeffentlicher Verkehr,47.3592009,8.5574438
+Uetlihof,Oeffentlicher Verkehr,47.3567467,8.5139925
+Dorflinde,Oeffentlicher Verkehr,47.4073252,8.5494892
+Zwielplatz,Oeffentlicher Verkehr,47.4021728,8.4964741
+Saalsporthalle,Oeffentlicher Verkehr,47.3577983,8.5205463
+Schmiede Wiedikon,Oeffentlicher Verkehr,47.3699939,8.5195879
+Morgental,Oeffentlicher Verkehr,47.3440851,8.5296731
+Klusplatz,Oeffentlicher Verkehr,47.3638478,8.5666994
+Grünwald,Oeffentlicher Verkehr,47.4173177,8.4831586
+Bahnhof Wiedikon,Oeffentlicher Verkehr,47.3715463,8.524072
+Glaubtenstrasse Nord,Oeffentlicher Verkehr,47.4147025,8.5197369
+Riedhofstrasse,Oeffentlicher Verkehr,47.4102395,8.4796791
+Riedhofstrasse,Oeffentlicher Verkehr,47.4094712,8.4792151
+Kalchbühlweg,Oeffentlicher Verkehr,47.3403121,8.5315749
+Manegg,Oeffentlicher Verkehr,47.3369553,8.5203704
+Manesseplatz,Oeffentlicher Verkehr,47.3657459,8.5218483
+Schwamendingerplatz,Oeffentlicher Verkehr,47.4045865,8.5717347
+In der Ey,Oeffentlicher Verkehr,47.3696362,8.4918432
+Leimgrübelstrasse,Oeffentlicher Verkehr,47.4286223,8.5432417
+Appenzellerstrasse,Oeffentlicher Verkehr,47.3988567,8.5101628
+Kirche Fluntern,Oeffentlicher Verkehr,47.3762387,8.5592877
+Langensteinenstrasse,Oeffentlicher Verkehr,47.3924951,8.5496687
+Germaniastrasse,Oeffentlicher Verkehr,47.3874509,8.5525297
+Farbhof,Oeffentlicher Verkehr,47.3910598,8.4788409
+Limmatplatz,Oeffentlicher Verkehr,47.3849755,8.5321996
+Hönggerberg,Oeffentlicher Verkehr,47.4050629,8.5047095
+Chaletweg,Oeffentlicher Verkehr,47.4133739,8.5310603
+Birchstrasse,Oeffentlicher Verkehr,47.4130399,8.53576
+Dunkelhölzli,Oeffentlicher Verkehr,47.3885975,8.4703424
+Schulhaus Buchlern,Oeffentlicher Verkehr,47.3846789,8.4785395
+Escher-Wyss-Platz,Oeffentlicher Verkehr,47.3906783,8.5224005
+Glaubtenstrasse,Oeffentlicher Verkehr,47.4140852,8.5192444
+Löwenplatz,Oeffentlicher Verkehr,47.3759408,8.5373362
+Stampfenbachplatz,Oeffentlicher Verkehr,47.3801519,8.542687
+Glaubtenstrasse Nord,Oeffentlicher Verkehr,47.4147631,8.5197205
+Bahnhof Affoltern,Oeffentlicher Verkehr,47.4214216,8.5075616
+Holzerhurd,Oeffentlicher Verkehr,47.4237869,8.4966542
+Frymannstrasse,Oeffentlicher Verkehr,47.3349436,8.5193412
+Lägernstrasse,Oeffentlicher Verkehr,47.3953165,8.532329
+Nordstrasse,Oeffentlicher Verkehr,47.3878412,8.536034
+Röntgenstrasse,Oeffentlicher Verkehr,47.3821651,8.5294589
+Helvetiaplatz,Oeffentlicher Verkehr,47.3762092,8.5255613
+Kernstrasse,Oeffentlicher Verkehr,47.3746404,8.5244118
+Bahnhof Enge/Bederstrasse,Oeffentlicher Verkehr,47.3646045,8.5304951
+Seilbahn Rigiblick,Oeffentlicher Verkehr,47.3861207,8.5482194
+Geeringstrasse,Oeffentlicher Verkehr,47.4143217,8.480696
+Bucheggplatz,Oeffentlicher Verkehr,47.3984386,8.533005
+Goldbrunnenplatz,Oeffentlicher Verkehr,47.3702888,8.5138776
+Im Klösterli,Oeffentlicher Verkehr,47.3845785,8.5769247
+Bucheggplatz,Oeffentlicher Verkehr,47.3983401,8.533454
+Heizenholz,Oeffentlicher Verkehr,47.4121445,8.4838327
+Frankental,Oeffentlicher Verkehr,47.405408,8.4817752
+Bahnhof Wiedikon,Oeffentlicher Verkehr,47.3712202,8.5238507
+Strassenverkehrsamt,Oeffentlicher Verkehr,47.3531622,8.5115423
+Bahnhof Oerlikon Ost,Oeffentlicher Verkehr,47.4134129,8.5462785
+Leutschenbach,Oeffentlicher Verkehr,47.4142575,8.551691
+Triemli,Oeffentlicher Verkehr,47.3680937,8.4956728
+Buhnstrasse,Oeffentlicher Verkehr,47.4223963,8.5386247
+Buhnstrasse,Oeffentlicher Verkehr,47.4225627,8.5386758
+Goldbrunnenplatz,Oeffentlicher Verkehr,47.3704254,8.5137412
+Signaustrasse,Oeffentlicher Verkehr,47.3632976,8.5575017
+Klusplatz,Oeffentlicher Verkehr,47.3639417,8.5665176
+Loorenstrasse,Oeffentlicher Verkehr,47.3596969,8.5937689
+Aspholz,Oeffentlicher Verkehr,47.4249065,8.5012306
+Mühlacker,Oeffentlicher Verkehr,47.4261662,8.4962068
+Blumenfeldstrasse,Oeffentlicher Verkehr,47.4237781,8.5052572
+Zehntenhausplatz,Oeffentlicher Verkehr,47.4188445,8.5070599
+Altes Krematorium,Oeffentlicher Verkehr,47.3777084,8.5073374
+Botanischer Garten,Oeffentlicher Verkehr,47.3592929,8.558009
+Kreuzplatz,Oeffentlicher Verkehr,47.3648829,8.5540328
+Leimgrübelstrasse,Oeffentlicher Verkehr,47.428682,8.5440879
+Waserstrasse,Oeffentlicher Verkehr,47.3584634,8.5834536
+Waserstrasse,Oeffentlicher Verkehr,47.3583233,8.5843875
+Berghaldenstrasse,Oeffentlicher Verkehr,47.3586144,8.589833
+Bahnhofplatz/HB,Oeffentlicher Verkehr,47.3773229,8.5394936
+Chinagarten,Oeffentlicher Verkehr,47.3543515,8.5530924
+Bahnhof Tiefenbrunnen,Oeffentlicher Verkehr,47.3497448,8.5610859
+Höschgasse,Oeffentlicher Verkehr,47.3580171,8.5542426
+Central,Oeffentlicher Verkehr,47.3769077,8.5436082
+Central,Oeffentlicher Verkehr,47.3771991,8.5432284
+Milchbuck,Oeffentlicher Verkehr,47.3976817,8.5416116
+Schmiede Wiedikon,Oeffentlicher Verkehr,47.3697848,8.5187857
+Stadtgrenze,Oeffentlicher Verkehr,47.3348609,8.5417412
+Stadtgrenze,Oeffentlicher Verkehr,47.3352703,8.5411668
+Rütihof,Oeffentlicher Verkehr,47.4137174,8.4773168
+Heizenholz,Oeffentlicher Verkehr,47.4124346,8.4837836
+Heizenholz,Oeffentlicher Verkehr,47.4123095,8.4838578
+Segantinistrasse,Oeffentlicher Verkehr,47.4078828,8.4895177
+Segantinistrasse,Oeffentlicher Verkehr,47.4072192,8.490192
+Singlistrasse,Oeffentlicher Verkehr,47.4055889,8.4924274
+Singlistrasse,Oeffentlicher Verkehr,47.4053866,8.49284
+Meierhofplatz,Oeffentlicher Verkehr,47.4026276,8.4996661
+Meierhofplatz,Oeffentlicher Verkehr,47.4026261,8.4994761
+Meierhofplatz,Oeffentlicher Verkehr,47.4016679,8.5004584
+Schwert,Oeffentlicher Verkehr,47.3997146,8.5048324
+Schwert,Oeffentlicher Verkehr,47.3997254,8.5048077
+Lehenstrasse,Oeffentlicher Verkehr,47.3961586,8.5206541
+Lehenstrasse,Oeffentlicher Verkehr,47.3960881,8.520913
+Widmerstrasse,Oeffentlicher Verkehr,47.3367727,8.5330237
+Dangelstrasse,Oeffentlicher Verkehr,47.3343642,8.5299735
+Morgental,Oeffentlicher Verkehr,47.343146,8.5305142
+Bellevue,Oeffentlicher Verkehr,47.3667612,8.5460093
+Bellevue,Oeffentlicher Verkehr,47.366473,8.5448259
+Kirche Fluntern,Oeffentlicher Verkehr,47.3772356,8.5590411
+Tobelhof,Oeffentlicher Verkehr,47.3828607,8.585741
+Hohenklingensteig,Oeffentlicher Verkehr,47.4010404,8.4909798
+Winzerstrasse,Oeffentlicher Verkehr,47.4028034,8.4866467
+Winzerstrasse,Oeffentlicher Verkehr,47.4034242,8.4861438
+Bahnhof Oerlikon Ost,Oeffentlicher Verkehr,47.4134347,8.545854
+Waffenplatz-/Bederstrasse,Oeffentlicher Verkehr,47.3616499,8.5264684
+Waffenplatzstrasse,Oeffentlicher Verkehr,47.3607122,8.5256577
+Brunau/Mutschellenstrasse,Oeffentlicher Verkehr,47.3540092,8.5261554
+Wollishoferplatz,Oeffentlicher Verkehr,47.338711,8.530568
+Grubenstrasse,Oeffentlicher Verkehr,47.3627897,8.5117301
+Räffelstrasse,Oeffentlicher Verkehr,47.3631351,8.5144788
+Räffelstrasse,Oeffentlicher Verkehr,47.3627308,8.5155963
+Binz,Oeffentlicher Verkehr,47.3630196,8.5182822
+Binz,Oeffentlicher Verkehr,47.3629382,8.5184857
+Friesenberg,Oeffentlicher Verkehr,47.3645715,8.5081323
+Friesenberg,Oeffentlicher Verkehr,47.3644215,8.507914
+Bucheggplatz,Oeffentlicher Verkehr,47.3983285,8.5330835
+Bucheggplatz,Oeffentlicher Verkehr,47.3981482,8.5332336
+Bucheggplatz,Oeffentlicher Verkehr,47.3985432,8.5330941
+ETH Hönggerberg,Oeffentlicher Verkehr,47.4086351,8.50797
+ETH Hönggerberg,Oeffentlicher Verkehr,47.4084185,8.5074334
+ETH Hönggerberg,Oeffentlicher Verkehr,47.4089603,8.508218
+Bahnhof Hardbrücke,Oeffentlicher Verkehr,47.3848991,8.5167746
+Kappeli,Oeffentlicher Verkehr,47.3844071,8.49486
+Kappeli,Oeffentlicher Verkehr,47.3841212,8.4944121
+Bristenstrasse,Oeffentlicher Verkehr,47.3901794,8.4872235
+Bristenstrasse,Oeffentlicher Verkehr,47.3898929,8.4868199
+Langensteinenstrasse,Oeffentlicher Verkehr,47.3925207,8.5498544
+Schäppiweg,Oeffentlicher Verkehr,47.3898696,8.5514294
+Schäppiweg,Oeffentlicher Verkehr,47.3899513,8.5508771
+Germaniastrasse,Oeffentlicher Verkehr,47.3871786,8.5525786
+Nordstrasse,Oeffentlicher Verkehr,47.3885098,8.5359412
+Klusplatz,Oeffentlicher Verkehr,47.363816,8.5667427
+Birchdörfli,Oeffentlicher Verkehr,47.4072151,8.5309004
+Waffenplatzstrasse,Oeffentlicher Verkehr,47.3610721,8.525153
+Sihlcity,Oeffentlicher Verkehr,47.3582364,8.5231845
+Mittelleimbach,Oeffentlicher Verkehr,47.3230897,8.5142296
+Zehntenhausplatz,Oeffentlicher Verkehr,47.4194475,8.5066302
+Lerchenrain,Oeffentlicher Verkehr,47.4140104,8.5095056
+Lerchenrain,Oeffentlicher Verkehr,47.4140884,8.5096119
+Bärenbohlstrasse,Oeffentlicher Verkehr,47.4260473,8.5098021
+Bärenbohlstrasse,Oeffentlicher Verkehr,47.425551,8.5097258
+Schumacherweg,Oeffentlicher Verkehr,47.4121122,8.5139808
+Schumacherweg,Oeffentlicher Verkehr,47.4122842,8.515467
+Strickhof,Oeffentlicher Verkehr,47.3935282,8.5475285
+Toblerplatz,Oeffentlicher Verkehr,47.379282,8.5591579
+Kreuzplatz,Oeffentlicher Verkehr,47.3658534,8.5538567
+Hegibachplatz,Oeffentlicher Verkehr,47.3618828,8.5606271
+Saalsporthalle,Oeffentlicher Verkehr,47.3570818,8.5218769
+Sihlcity,Oeffentlicher Verkehr,47.3582181,8.5230374
+Zehntenhausplatz,Oeffentlicher Verkehr,47.4187002,8.5061486
+Zehntenhausplatz,Oeffentlicher Verkehr,47.4195356,8.5055283
+Hungerbergstrasse,Oeffentlicher Verkehr,47.4212467,8.5003955
+Riedgraben,Oeffentlicher Verkehr,47.4108209,8.5592587
+Riedgraben,Oeffentlicher Verkehr,47.4108071,8.5583961
+Saatlenstrasse,Oeffentlicher Verkehr,47.4108811,8.5626681
+Saatlenstrasse,Oeffentlicher Verkehr,47.4109,8.5639219
+Werdhölzli,Oeffentlicher Verkehr,47.3978575,8.4819638
+Spyriplatz,Oeffentlicher Verkehr,47.3824452,8.5522203
+Spyriplatz,Oeffentlicher Verkehr,47.3820782,8.5520356
+ETH Hönggerberg,Oeffentlicher Verkehr,47.4089176,8.5077072
+Bahnhof Wollishofen/Werft,Oeffentlicher Verkehr,47.34786,8.5343442
+Rentenanstalt,Oeffentlicher Verkehr,47.3631025,8.5352073
+Einfangstrasse,Oeffentlicher Verkehr,47.4154975,8.5133273
+Neunbrunnen,Oeffentlicher Verkehr,47.4164116,8.538161
+Neunbrunnen,Oeffentlicher Verkehr,47.4167136,8.538307
+Maillartstrasse,Oeffentlicher Verkehr,47.4161682,8.5320223
+Stierenried,Oeffentlicher Verkehr,47.4165996,8.5356394
+Messe/Hallenstadion,Oeffentlicher Verkehr,47.4106724,8.5520512
+Militär-/Langstrasse,Oeffentlicher Verkehr,47.3793556,8.5275361
+Militär-/Langstrasse,Oeffentlicher Verkehr,47.3799558,8.5278671
+Nordheimstrasse,Oeffentlicher Verkehr,47.4035943,8.5305127
+Hegibachplatz,Oeffentlicher Verkehr,47.3616855,8.5607737
+Höfliweg,Oeffentlicher Verkehr,47.3675332,8.5109115
+Höfliweg,Oeffentlicher Verkehr,47.3677007,8.5110298
+Birchdörfli,Oeffentlicher Verkehr,47.4078849,8.5304004
+Limmatplatz,Oeffentlicher Verkehr,47.3844704,8.5313142
+Aubrücke,Oeffentlicher Verkehr,47.4100673,8.5722893
+Aubrücke,Oeffentlicher Verkehr,47.4108248,8.5718273
+Aubrücke,Oeffentlicher Verkehr,47.4104658,8.5727553
+Sihlcity Nord,Oeffentlicher Verkehr,47.3605054,8.5228098
+Friedhof Sihlfeld,Oeffentlicher Verkehr,47.3760698,8.5110109
+Botanischer Garten,Oeffentlicher Verkehr,47.3597854,8.5574887
+Sihlcity Nord,Oeffentlicher Verkehr,47.3602127,8.5235276
+Jugendherberge,Oeffentlicher Verkehr,47.3478998,8.5281037
+Jugendherberge,Oeffentlicher Verkehr,47.3482164,8.5276766
+Manesseplatz,Oeffentlicher Verkehr,47.3656234,8.5217473
+Hügelstrasse,Oeffentlicher Verkehr,47.3585747,8.5260073
+Friedhof Sihlfeld,Oeffentlicher Verkehr,47.3757624,8.5109309
+Höschgasse,Oeffentlicher Verkehr,47.3578797,8.5548233
+Höschgasse,Oeffentlicher Verkehr,47.3579478,8.5550611
+Hügelstrasse,Oeffentlicher Verkehr,47.3581369,8.5269946
+Manesseplatz,Oeffentlicher Verkehr,47.3654595,8.5215837
+Besenrainstrasse,Oeffentlicher Verkehr,47.3457185,8.5278964
+Jugendherberge,Oeffentlicher Verkehr,47.3469637,8.5284091
+Brunau/Mutschellenstrasse,Oeffentlicher Verkehr,47.3552044,8.5268755
+Farbhof,Oeffentlicher Verkehr,47.3913401,8.4785093
+Seilbahn Rigiblick,Oeffentlicher Verkehr,47.3856591,8.5484621
+Bahnhof Altstetten,Oeffentlicher Verkehr,47.3908713,8.4889047
+Bahnhof Altstetten,Oeffentlicher Verkehr,47.3911676,8.4879525
+Fronwald,Oeffentlicher Verkehr,47.4219064,8.5098605
+Fronwald,Oeffentlicher Verkehr,47.4220833,8.5097535
+Dorflinde,Oeffentlicher Verkehr,47.407442,8.5489261
+Bahnhof Leimbach,Oeffentlicher Verkehr,47.3335513,8.5189265
+Bahnhof Leimbach,Oeffentlicher Verkehr,47.3330952,8.5184572
+Rautistrasse,Oeffentlicher Verkehr,47.3835478,8.4835533
+Salzweg,Oeffentlicher Verkehr,47.3879871,8.471285
+Farbhof,Oeffentlicher Verkehr,47.390359,8.4791002
+Friedhof Uetliberg,Oeffentlicher Verkehr,47.3587639,8.5006138
+Dreispitz,Oeffentlicher Verkehr,47.410713,8.568193
+Im Hüsli,Oeffentlicher Verkehr,47.3281945,8.512778
+Im Walder,Oeffentlicher Verkehr,47.3480542,8.5742223
+Gutstrasse,Oeffentlicher Verkehr,47.3718254,8.5064622
+Friesenberghalde,Oeffentlicher Verkehr,47.3610542,8.5020635
+Frymannstrasse,Oeffentlicher Verkehr,47.3356129,8.5187402
+Bahnhof Wollishofen/Werft,Oeffentlicher Verkehr,47.348167,8.5343455
+Seerose,Oeffentlicher Verkehr,47.3394417,8.5379062
+Sihlweidstrasse,Oeffentlicher Verkehr,47.3266034,8.5142512
+Sukkulentensammlung,Oeffentlicher Verkehr,47.3550964,8.5342883
+Verenastrasse,Oeffentlicher Verkehr,47.3409236,8.5253632
+Vulkanstrasse,Oeffentlicher Verkehr,47.39383,8.483748
+Wonnebergstrasse,Oeffentlicher Verkehr,47.3517263,8.5667332
+Langgrütstrasse,Oeffentlicher Verkehr,47.3738363,8.499881
+Landiwiese,Oeffentlicher Verkehr,47.3510351,8.5342689
+Marbachweg,Oeffentlicher Verkehr,47.3302999,8.5153034
+Sackzelg,Oeffentlicher Verkehr,47.3741744,8.4954003
+Schulhaus Altweg,Oeffentlicher Verkehr,47.372722,8.4942161
+Schweizer Rück,Oeffentlicher Verkehr,47.3598107,8.5354436
+Hubertus,Oeffentlicher Verkehr,47.3775017,8.4988305
+Hubertus,Oeffentlicher Verkehr,47.3772033,8.4982441
+Vogelsangstrasse,Oeffentlicher Verkehr,47.3835833,8.5491355
+Hinterbergstrasse,Oeffentlicher Verkehr,47.3800847,8.5545211
+Luchswiesen,Oeffentlicher Verkehr,47.4073382,8.5853155
+Luchswiesen,Oeffentlicher Verkehr,47.4069267,8.5866463
+Bahnhof Tiefenbrunnen,Oeffentlicher Verkehr,47.3502185,8.5608023
+Bahnhof Tiefenbrunnen,Oeffentlicher Verkehr,47.3502889,8.560732
+ETH Hönggerberg,Oeffentlicher Verkehr,47.4085765,8.5075367
+Glaubtenstrasse,Oeffentlicher Verkehr,47.4139882,8.519617
+Glaubtenstrasse,Oeffentlicher Verkehr,47.4145015,8.5192288
+Hönggerberg,Oeffentlicher Verkehr,47.4049299,8.5051925
+Hönggerberg,Oeffentlicher Verkehr,47.4050539,8.5051923
+Glaubtenstrasse Süd,Oeffentlicher Verkehr,47.413557,8.5184871
+Lindenplatz,Oeffentlicher Verkehr,47.3872442,8.4864333
+Lindenplatz,Oeffentlicher Verkehr,47.3882613,8.4867403
+Max-Bill-Platz,Oeffentlicher Verkehr,47.4139318,8.5410969
+Max-Bill-Platz,Oeffentlicher Verkehr,47.4141079,8.5410609
+Hohenklingensteig,Oeffentlicher Verkehr,47.4014058,8.4901578
+Mötteliweg,Oeffentlicher Verkehr,47.4138771,8.5268969
+Mötteliweg,Oeffentlicher Verkehr,47.4140604,8.526102
+Tüffenwies,Oeffentlicher Verkehr,47.3981058,8.4946825
+Wartau,Oeffentlicher Verkehr,47.4026882,8.4920962
+Winzerhalde,Oeffentlicher Verkehr,47.3999375,8.4946091
+Winzerhalde,Oeffentlicher Verkehr,47.4001577,8.4946434
+Albisrieden,Oeffentlicher Verkehr,47.374429,8.4844463
+Albisrieden,Oeffentlicher Verkehr,47.3746745,8.4849011
+Albisriederdörfli,Oeffentlicher Verkehr,47.3753316,8.4851077
+Albisriederdörfli,Oeffentlicher Verkehr,47.3754399,8.4849232
+Goldackerweg,Oeffentlicher Verkehr,47.3720801,8.4873906
+Goldackerweg,Oeffentlicher Verkehr,47.3725852,8.4865303
+In der Ey,Oeffentlicher Verkehr,47.3694574,8.4912776
+In der Ey,Oeffentlicher Verkehr,47.3694779,8.4909866
+Rautistrasse,Oeffentlicher Verkehr,47.3827695,8.4839137
+Rautistrasse,Oeffentlicher Verkehr,47.3839919,8.4843433
+Triemlispital,Oeffentlicher Verkehr,47.3660491,8.496962
+Untermoosstrasse,Oeffentlicher Verkehr,47.3792486,8.4832275
+Untermoosstrasse,Oeffentlicher Verkehr,47.380156,8.4834811
+Triemli,Oeffentlicher Verkehr,47.3682787,8.4951558
+Bahnhof Affoltern,Oeffentlicher Verkehr,47.4208837,8.5072551
+Bahnhof Affoltern,Oeffentlicher Verkehr,47.42062,8.5086288
+Schauenberg,Oeffentlicher Verkehr,47.4160747,8.5070864
+Schauenberg,Oeffentlicher Verkehr,47.4162639,8.5068977
+Butzenstrasse,Oeffentlicher Verkehr,47.3414345,8.5298638
+Butzenstrasse,Oeffentlicher Verkehr,47.3415181,8.5294309
+Im Hüsli,Oeffentlicher Verkehr,47.328401,8.5127823
+Marbachweg,Oeffentlicher Verkehr,47.3304839,8.5155883
+Sihlweidstrasse,Oeffentlicher Verkehr,47.326669,8.5142122
+Verenastrasse,Oeffentlicher Verkehr,47.340951,8.5251301
+Bethanien,Oeffentlicher Verkehr,47.3809183,8.5560856
+Grünaustrasse,Oeffentlicher Verkehr,47.3949213,8.4902618
+Zoo,Oeffentlicher Verkehr,47.3815217,8.5714692
+Altried,Oeffentlicher Verkehr,47.4053953,8.5922199
+Altried,Oeffentlicher Verkehr,47.4063066,8.5915026
+Elektrowatt,Oeffentlicher Verkehr,47.3574109,8.5503705
+Altried,Oeffentlicher Verkehr,47.4061353,8.5911555
+Bürkliplatz,Oeffentlicher Verkehr,47.3668869,8.5403469
+Herzogenmühlestrasse,Oeffentlicher Verkehr,47.407545,8.572685
+Herdernstrasse,Oeffentlicher Verkehr,47.3852474,8.5078412
+Botanischer Garten,Oeffentlicher Verkehr,47.3592352,8.5580476
+Freiestrasse,Oeffentlicher Verkehr,47.3628784,8.5628351
+Freiestrasse,Oeffentlicher Verkehr,47.3628144,8.5626511
+Central,Oeffentlicher Verkehr,47.376509,8.5446875
+Kunsthaus,Oeffentlicher Verkehr,47.3705261,8.548453
+Lindenplatz,Oeffentlicher Verkehr,47.3878642,8.4860233
+Sädlenweg,Oeffentlicher Verkehr,47.3677592,8.4878658
+Kalkbreite/Bhf. Wiedikon,Oeffentlicher Verkehr,47.3743082,8.5213622
+Kalkbreite/Bhf. Wiedikon,Oeffentlicher Verkehr,47.3741738,8.5210322
+Albisriederplatz,Oeffentlicher Verkehr,47.3781643,8.5095715
+Albisriederplatz,Oeffentlicher Verkehr,47.3780812,8.5091612
+Lindenplatz,Oeffentlicher Verkehr,47.3878661,8.4855507
+Rote Fabrik,Oeffentlicher Verkehr,47.3429351,8.5359179
+Seerose,Oeffentlicher Verkehr,47.3385515,8.5383503
+Landiwiese,Oeffentlicher Verkehr,47.3499203,8.5343193
+Schweizer Rück,Oeffentlicher Verkehr,47.3592628,8.5354864
+Sukkulentensammlung,Oeffentlicher Verkehr,47.3547638,8.5342118
+Schiffbau,Oeffentlicher Verkehr,47.3883276,8.5202169
+Schiffbau,Oeffentlicher Verkehr,47.388295,8.5200742
+Bahnhof Oerlikon,Oeffentlicher Verkehr,47.4107046,8.5459087
+Dreispitz,Oeffentlicher Verkehr,47.4108148,8.5671577
+Hallenbad Oerlikon,Oeffentlicher Verkehr,47.4107647,8.5562254
+Hallenbad Oerlikon,Oeffentlicher Verkehr,47.4107529,8.5554806
+Zwinglihaus,Oeffentlicher Verkehr,47.3713387,8.5161478
+Zwinglihaus,Oeffentlicher Verkehr,47.3713935,8.5160931
+Zwinglihaus,Oeffentlicher Verkehr,47.3718076,8.516281
+Zwinglihaus,Oeffentlicher Verkehr,47.3720541,8.5166966
+Friesenberghalde,Oeffentlicher Verkehr,47.3611514,8.5025578
+Sprecherstrasse,Oeffentlicher Verkehr,47.3673896,8.5527098
+Bertastrasse,Oeffentlicher Verkehr,47.3736025,8.5138075
+Bertastrasse,Oeffentlicher Verkehr,47.3740952,8.513255
+Hardplatz,Oeffentlicher Verkehr,47.3822371,8.5142241
+Hardplatz,Oeffentlicher Verkehr,47.3820895,8.5140839
+Altes Krematorium,Oeffentlicher Verkehr,47.3775581,8.5082147
+Vogelsangstrasse,Oeffentlicher Verkehr,47.383472,8.5492525
+Scheuchzerstrasse,Oeffentlicher Verkehr,47.3876341,8.5442681
+Scheuchzerstrasse,Oeffentlicher Verkehr,47.3877437,8.5440834
+Thujastrasse,Oeffentlicher Verkehr,47.3501096,8.527808
+Thujastrasse,Oeffentlicher Verkehr,47.3503403,8.5278169
+Fellenbergstrasse,Oeffentlicher Verkehr,47.3755857,8.4886368
+Gutstrasse,Oeffentlicher Verkehr,47.3716528,8.5068044
+Im Gut,Oeffentlicher Verkehr,47.3738579,8.5031615
+Langgrütstrasse,Oeffentlicher Verkehr,47.3737965,8.500498
+Sackzelg,Oeffentlicher Verkehr,47.3746035,8.4949498
+Sackzelg,Oeffentlicher Verkehr,47.3745874,8.4950547
+Rigiblick,Oeffentlicher Verkehr,47.387403,8.5540793
+Hürstholz,Oeffentlicher Verkehr,47.4169637,8.5229444
+Hürstholz,Oeffentlicher Verkehr,47.4168324,8.5228315
+Seebach,Oeffentlicher Verkehr,47.4219623,8.5499933
+Staudenbühl,Oeffentlicher Verkehr,47.4199305,8.5350704
+Staudenbühl,Oeffentlicher Verkehr,47.4200824,8.5355223
+Seebach,Oeffentlicher Verkehr,47.4213477,8.5496871
+Seebach,Oeffentlicher Verkehr,47.4218564,8.5495391
+Sihlpost/HB,Oeffentlicher Verkehr,47.3761461,8.5341935
+Sihlpost/HB,Oeffentlicher Verkehr,47.3762517,8.5343577
+Hardplatz,Oeffentlicher Verkehr,47.3831135,8.5148243
+Im Wingert,Oeffentlicher Verkehr,47.4011048,8.5091307
+Schmiede Wiedikon,Oeffentlicher Verkehr,47.3694404,8.5207381
+Bahnhof Stettbach,Oeffentlicher Verkehr,47.3969747,8.5951692
+Geeringstrasse,Oeffentlicher Verkehr,47.41445,8.4800663
+Bahnhof Wiedikon,Oeffentlicher Verkehr,47.3716354,8.5237344
+Wonnebergstrasse,Oeffentlicher Verkehr,47.3519687,8.56629
+Im Gut,Oeffentlicher Verkehr,47.3735538,8.5032613
+Sädlenweg,Oeffentlicher Verkehr,47.367786,8.4870538
+Binz Center,Oeffentlicher Verkehr,47.3618868,8.5111002
+Zoo,Oeffentlicher Verkehr,47.381589,8.5713863
+Maienweg,Oeffentlicher Verkehr,47.4076676,8.526464
+Grünauring,Oeffentlicher Verkehr,47.3966116,8.4866245
+Zielweg,Oeffentlicher Verkehr,47.3587251,8.4975842
+Hegibachplatz,Oeffentlicher Verkehr,47.3614479,8.5596669
+Schönauring,Oeffentlicher Verkehr,47.4257472,8.5364704
+Schönauring,Oeffentlicher Verkehr,47.4263897,8.5365942
+Waidhof,Oeffentlicher Verkehr,47.4237257,8.5228475
+Goldbrunnenplatz,Oeffentlicher Verkehr,47.3701338,8.5140936
+Laubegg,Oeffentlicher Verkehr,47.3586691,8.5175096
+Bahnhofquai/HB,Oeffentlicher Verkehr,47.377607,8.5419903
+Herzogenmühlestrasse,Oeffentlicher Verkehr,47.4071319,8.5727865
+Bahnhof Oerlikon,Oeffentlicher Verkehr,47.4114718,8.5447944
+Weihersteig,Oeffentlicher Verkehr,47.3980224,8.5282934
+Einfangstrasse,Oeffentlicher Verkehr,47.4159706,8.5126056
+Triemli,Oeffentlicher Verkehr,47.3680363,8.4956661
+Triemli,Oeffentlicher Verkehr,47.368017,8.4952854
+Neeserweg,Oeffentlicher Verkehr,47.3906619,8.4745979
+Neeserweg,Oeffentlicher Verkehr,47.3906043,8.4747372
+Krematorium Nordheim,Oeffentlicher Verkehr,47.4055237,8.5279242
+Feuerland/Haupteingang,Oeffentlicher Verkehr,47.3851731,8.5749424
+Masoala Regenwald,Oeffentlicher Verkehr,47.3862311,8.577711
+Bahnhof Oerlikon,Oeffentlicher Verkehr,47.4114541,8.5447442
+Schanzackerstrasse,Oeffentlicher Verkehr,47.3920813,8.5475718
+Bahnhof Stettbach,Oeffentlicher Verkehr,47.3966677,8.5959542
+Neumarkt,Oeffentlicher Verkehr,47.3729429,8.5473008
+Bucheggplatz,Oeffentlicher Verkehr,47.3980252,8.5335696
+Brunnenhof,Oeffentlicher Verkehr,47.4019585,8.5349477
+Escher-Wyss-Platz,Oeffentlicher Verkehr,47.3908987,8.5227339
+Bahnhof Hardbrücke,Oeffentlicher Verkehr,47.3852824,8.5172531
+Appenzellerstrasse,Oeffentlicher Verkehr,47.3988837,8.508995
+Güterbahnhof,Oeffentlicher Verkehr,47.3804949,8.519535
+Sternen Oerlikon,Oeffentlicher Verkehr,47.4102351,8.5468917
+Sternen Oerlikon,Oeffentlicher Verkehr,47.410225,8.5467743
+Bahnhof Stettbach,Oeffentlicher Verkehr,47.3967758,8.5956892
+Bahnhof Stettbach,Oeffentlicher Verkehr,47.3968744,8.5954283
+Schaufelbergerstrasse,Oeffentlicher Verkehr,47.3689857,8.502576
+Schaufelbergerstrasse,Oeffentlicher Verkehr,47.3689548,8.5023196
+Milchbuck,Oeffentlicher Verkehr,47.3981718,8.5419329
+Brunnenhof,Oeffentlicher Verkehr,47.4022321,8.5352308
+Messe/Hallenstadion,Oeffentlicher Verkehr,47.4107102,8.5528703
+Bahnhof Oerlikon Nord,Oeffentlicher Verkehr,47.4124494,8.5441173
+Bahnhof Oerlikon Nord,Oeffentlicher Verkehr,47.4123095,8.5437583
+Salzweg,Oeffentlicher Verkehr,47.3874783,8.4721223
+Kaeng Krachan Elefantenpark,Oeffentlicher Verkehr,47.3877752,8.5761271
+Bahnhof Altstetten Nord,Oeffentlicher Verkehr,47.3924007,8.4896932
+Seebacherplatz,Oeffentlicher Verkehr,47.4200347,8.5477979
+Seebacherplatz,Oeffentlicher Verkehr,47.4195588,8.5482077
+Seebach,Oeffentlicher Verkehr,47.4217102,8.5497203
+Ausserdorfstrasse,Oeffentlicher Verkehr,47.4244623,8.5487916
+Ausserdorfstrasse,Oeffentlicher Verkehr,47.4245546,8.5484769
+Birch-/Glatttalstrasse,Oeffentlicher Verkehr,47.4279169,8.5458689
+Birch-/Glatttalstrasse,Oeffentlicher Verkehr,47.4270751,8.5463343
+Käshaldenstrasse,Oeffentlicher Verkehr,47.4298721,8.5410522
+Käshaldenstrasse,Oeffentlicher Verkehr,47.4300358,8.541002
+Köschenrüti,Oeffentlicher Verkehr,47.4290653,8.5372228
+Köschenrüti,Oeffentlicher Verkehr,47.4289976,8.5369777
+Himmeri,Oeffentlicher Verkehr,47.4200258,8.5386879
+Himmeri,Oeffentlicher Verkehr,47.4199365,8.5385391
+Bollingerweg,Oeffentlicher Verkehr,47.4142672,8.5380161
+Bollingerweg,Oeffentlicher Verkehr,47.4141593,8.5378746
+Sternen Oerlikon,Oeffentlicher Verkehr,47.4101912,8.5459827
+Sternen Oerlikon,Oeffentlicher Verkehr,47.4095511,8.5464169
+Friedackerstrasse,Oeffentlicher Verkehr,47.405682,8.553891
+Friedackerstrasse,Oeffentlicher Verkehr,47.4060425,8.5531938
+Waldgarten,Oeffentlicher Verkehr,47.4046894,8.5574671
+Waldgarten,Oeffentlicher Verkehr,47.4044622,8.5580027
+Frohburg,Oeffentlicher Verkehr,47.4042572,8.562251
+Frohburg,Oeffentlicher Verkehr,47.4040604,8.562569
+Friedrichstrasse,Oeffentlicher Verkehr,47.4037936,8.5680387
+Friedrichstrasse,Oeffentlicher Verkehr,47.4039893,8.5690353
+Schwamendingerplatz,Oeffentlicher Verkehr,47.4049866,8.5728628
+Schwamendingerplatz,Oeffentlicher Verkehr,47.4048265,8.5713202
+Im Hagacker,Oeffentlicher Verkehr,47.3596507,8.5074539
+Im Hagacker,Oeffentlicher Verkehr,47.3595021,8.507411
+Rotbuchstrasse,Oeffentlicher Verkehr,47.3909766,8.5363598
+Rotbuchstrasse,Oeffentlicher Verkehr,47.3909112,8.536181
+Neuaffoltern,Oeffentlicher Verkehr,47.411588,8.5261706
+Neuaffoltern,Oeffentlicher Verkehr,47.4122821,8.5241459
+Neuaffoltern,Oeffentlicher Verkehr,47.4115582,8.5253677
+Friesenbergstrasse,Oeffentlicher Verkehr,47.3623036,8.5049673
+Friesenbergstrasse,Oeffentlicher Verkehr,47.3620532,8.5049716
+Hegianwandweg,Oeffentlicher Verkehr,47.3565103,8.5100079
+Hegianwandweg,Oeffentlicher Verkehr,47.3567206,8.5099839
+Nordstrasse,Oeffentlicher Verkehr,47.3883965,8.5364426
+Hungerbergstrasse,Oeffentlicher Verkehr,47.4213262,8.5016264
+Hungerbergstrasse,Oeffentlicher Verkehr,47.4208551,8.5021615
+Regensbergbrücke,Oeffentlicher Verkehr,47.4091976,8.5390267
+Regensbergbrücke,Oeffentlicher Verkehr,47.4090258,8.5392117
+Oberwiesenstrasse,Oeffentlicher Verkehr,47.4103668,8.5330379
+Oberwiesenstrasse,Oeffentlicher Verkehr,47.410503,8.5328695
+Unteraffoltern,Oeffentlicher Verkehr,47.4239546,8.5112337
+Dunkelhölzli,Oeffentlicher Verkehr,47.3887605,8.4702934
+Rautihalde,Oeffentlicher Verkehr,47.3863613,8.4738486
+Hegibachplatz,Oeffentlicher Verkehr,47.3613364,8.5607175
+Winzerstrasse,Oeffentlicher Verkehr,47.4037876,8.4861693
+Waidspital,Oeffentlicher Verkehr,47.3990508,8.5218174
+Bahnhof Wiedikon,Oeffentlicher Verkehr,47.3718027,8.5235357
+Kirche Fluntern,Oeffentlicher Verkehr,47.3765498,8.5602387
+Rigiblick,Oeffentlicher Verkehr,47.3876544,8.5537412
+Kunsthaus,Oeffentlicher Verkehr,47.3703356,8.548607
+Fellenbergstrasse,Oeffentlicher Verkehr,47.3756923,8.4874517
+Klusplatz,Oeffentlicher Verkehr,47.3642696,8.5660198
+Klusplatz,Oeffentlicher Verkehr,47.3641975,8.5657605
+Kapfstrasse,Oeffentlicher Verkehr,47.3610338,8.5711797
+Kapfstrasse,Oeffentlicher Verkehr,47.3612029,8.5709977
+Zentrum Witikon,Oeffentlicher Verkehr,47.3581882,8.5875082
+Zentrum Witikon,Oeffentlicher Verkehr,47.3583644,8.5859938
+Berghaldenstrasse,Oeffentlicher Verkehr,47.3586998,8.590632
+Loorenstrasse,Oeffentlicher Verkehr,47.3594066,8.5947617
+Zweiackerstrasse,Oeffentlicher Verkehr,47.3569131,8.5980978
+Zweiackerstrasse,Oeffentlicher Verkehr,47.3570804,8.598081
+Kienastenwies,Oeffentlicher Verkehr,47.3552417,8.6008123
+Triemli,Oeffentlicher Verkehr,47.3679906,8.4953967
+Nürenbergstrasse,Oeffentlicher Verkehr,47.3920208,8.5335478
+Nürenbergstrasse,Oeffentlicher Verkehr,47.3926764,8.532598
+Mittelleimbach,Oeffentlicher Verkehr,47.3232176,8.514582
+Seebacherplatz,Oeffentlicher Verkehr,47.4199248,8.5483842
+Waidspital,Oeffentlicher Verkehr,47.3991621,8.5217468
+Waidbadstrasse,Oeffentlicher Verkehr,47.3989894,8.5137239
+Waidbadstrasse,Oeffentlicher Verkehr,47.3989796,8.5133509
+Auzelg Ost,Oeffentlicher Verkehr,47.4134471,8.5719336
+Auzelg,Oeffentlicher Verkehr,47.4164567,8.5686014
+Auzelg,Oeffentlicher Verkehr,47.4163556,8.5690137
+Buchholz,Oeffentlicher Verkehr,47.360876,8.5886419
+Buchzelgstrasse,Oeffentlicher Verkehr,47.3596963,8.5854586
+Buchzelgstrasse,Oeffentlicher Verkehr,47.3589023,8.58508
+Loorenstrasse,Oeffentlicher Verkehr,47.3599915,8.5955108
+Friedhof Witikon,Oeffentlicher Verkehr,47.3613403,8.6028281
+Friedhof Witikon,Oeffentlicher Verkehr,47.3613799,8.6021747
+Glockenacker,Oeffentlicher Verkehr,47.3609411,8.5993507
+Glockenacker,Oeffentlicher Verkehr,47.3609124,8.5985607
+Nordheimstrasse,Oeffentlicher Verkehr,47.4037117,8.5304627
+Krematorium Nordheim,Oeffentlicher Verkehr,47.4053998,8.5280851
+Maienweg,Oeffentlicher Verkehr,47.4074439,8.526568
+Seebach,Oeffentlicher Verkehr,47.4220246,8.5498006
+Messe/Hallenstadion,Oeffentlicher Verkehr,47.4106546,8.5517015
+ETH Zentrum,Oeffentlicher Verkehr,47.3762232,8.5470041
+Leutschenbach,Oeffentlicher Verkehr,47.4142373,8.5514629
+Kalchbühlweg,Oeffentlicher Verkehr,47.340688,8.5314759
+Morgental,Oeffentlicher Verkehr,47.3434323,8.5302769
+Schmiede Wiedikon,Oeffentlicher Verkehr,47.370152,8.5190267
+Hungerbergstrasse,Oeffentlicher Verkehr,47.4209726,8.5009694
+Bändliweg,Oeffentlicher Verkehr,47.3963533,8.4850686
+Manegg,Oeffentlicher Verkehr,47.337117,8.5198978
+Rosengartenstrasse,Oeffentlicher Verkehr,47.3945073,8.5256102
+Rosengartenstrasse,Oeffentlicher Verkehr,47.394391,8.5251722
+Altenhofstrasse,Oeffentlicher Verkehr,47.3552678,8.5615063
+Altenhofstrasse,Oeffentlicher Verkehr,47.3551645,8.5614384
+Flühgasse,Oeffentlicher Verkehr,47.3506263,8.5694048
+Flühgasse,Oeffentlicher Verkehr,47.3504545,8.5694096
+EPI-Klinik,Oeffentlicher Verkehr,47.3487977,8.5708185
+EPI-Klinik,Oeffentlicher Verkehr,47.3486304,8.5707874
+Schulhaus Buchlern,Oeffentlicher Verkehr,47.3844743,8.4774737
+Schulhaus Buchlern,Oeffentlicher Verkehr,47.3845139,8.477364
+Feusisbergli,Oeffentlicher Verkehr,47.3925325,8.4706284
+Feusisbergli,Oeffentlicher Verkehr,47.3926892,8.4713119
+Loogarten,Oeffentlicher Verkehr,47.38948,8.4721481
+Loogarten,Oeffentlicher Verkehr,47.3894502,8.4724318
+Baslerstrasse,Oeffentlicher Verkehr,47.3886946,8.4896805
+Baslerstrasse,Oeffentlicher Verkehr,47.3886206,8.4902335
+Letzipark West,Oeffentlicher Verkehr,47.3867941,8.4968769
+Letzipark West,Oeffentlicher Verkehr,47.3859125,8.4960266
+Letzipark West,Oeffentlicher Verkehr,47.3867395,8.4958081
+Flurstrasse,Oeffentlicher Verkehr,47.3815117,8.4920279
+Flurstrasse,Oeffentlicher Verkehr,47.3815628,8.4918983
+Albisrank,Oeffentlicher Verkehr,47.3796991,8.4946389
+Albisrank,Oeffentlicher Verkehr,47.379816,8.4947295
+Hubertus,Oeffentlicher Verkehr,47.3769821,8.4992872
+Hubertus,Oeffentlicher Verkehr,47.376905,8.4995883
+Schaufelbergerstrasse,Oeffentlicher Verkehr,47.3692566,8.5015225
+Schaufelbergerstrasse,Oeffentlicher Verkehr,47.3694031,8.5014344
+Schweighof,Oeffentlicher Verkehr,47.364461,8.502754
+Schweighof,Oeffentlicher Verkehr,47.364798,8.5027888
+Tüffenwies,Oeffentlicher Verkehr,47.3985881,8.4949672
+Blumenfeldstrasse,Oeffentlicher Verkehr,47.4238505,8.5050519
+Aspholz,Oeffentlicher Verkehr,47.4249695,8.5010203
+Rotbuchstrasse,Oeffentlicher Verkehr,47.3912842,8.5357136
+Rotbuchstrasse,Oeffentlicher Verkehr,47.3914158,8.5356365
+Militär-/Langstrasse,Oeffentlicher Verkehr,47.3797541,8.5274254
+Militär-/Langstrasse,Oeffentlicher Verkehr,47.379555,8.527981
+Grünaustrasse,Oeffentlicher Verkehr,47.3951099,8.4889899
+Letzibach,Oeffentlicher Verkehr,47.3891675,8.4947633
+Letzibach,Oeffentlicher Verkehr,47.3888157,8.4955442
+Letzipark,Oeffentlicher Verkehr,47.3878305,8.499285
+Letzipark,Oeffentlicher Verkehr,47.3874027,8.5003311
+SBB-Werkstätte,Oeffentlicher Verkehr,47.3866631,8.5028296
+SBB-Werkstätte,Oeffentlicher Verkehr,47.3870468,8.5019462
+Herdernstrasse,Oeffentlicher Verkehr,47.3847915,8.5090366
+Hardplatz,Oeffentlicher Verkehr,47.3829248,8.5149792
+Bäckeranlage,Oeffentlicher Verkehr,47.3792306,8.5238149
+Bäckeranlage,Oeffentlicher Verkehr,47.3791566,8.5235373
+Kanonengasse,Oeffentlicher Verkehr,47.3783919,8.5301291
+Kanonengasse,Oeffentlicher Verkehr,47.3785591,8.5300389
+Neumarkt,Oeffentlicher Verkehr,47.3726637,8.5474707
+Sprecherstrasse,Oeffentlicher Verkehr,47.3678872,8.5518599
+Signaustrasse,Oeffentlicher Verkehr,47.3630463,8.5578581
+Schaffhauserplatz,Oeffentlicher Verkehr,47.3914097,8.5380113
+Schaffhauserplatz,Oeffentlicher Verkehr,47.3912548,8.538364
+Rosengartenstrasse,Oeffentlicher Verkehr,47.3943501,8.5252675
+Rosengartenstrasse,Oeffentlicher Verkehr,47.3940504,8.5258003
+Sackzelg,Oeffentlicher Verkehr,47.374014,8.4952541
+Schulhaus Altweg,Oeffentlicher Verkehr,47.3725723,8.4941367
+Bahnhof Wipkingen,Oeffentlicher Verkehr,47.3932507,8.5299335
+Bahnhof Wipkingen,Oeffentlicher Verkehr,47.3934825,8.5296664
+Wieslergasse,Oeffentlicher Verkehr,47.4039374,8.4962182
+Meierhofplatz,Oeffentlicher Verkehr,47.4017717,8.4998145
+Ettenfeld,Oeffentlicher Verkehr,47.4252628,8.5533967
+Ettenfeld,Oeffentlicher Verkehr,47.4257172,8.5541236
+Bahnhof Altstetten,Oeffentlicher Verkehr,47.3903236,8.48943
+Am Suteracher,Oeffentlicher Verkehr,47.390908,8.4697515
+Am Suteracher,Oeffentlicher Verkehr,47.3910203,8.4697539
+Juchhof,Oeffentlicher Verkehr,47.3984034,8.4726291
+Juchhof,Oeffentlicher Verkehr,47.3982904,8.4737019
+Vulkanstrasse,Oeffentlicher Verkehr,47.394343,8.4840678
+Rote Fabrik,Oeffentlicher Verkehr,47.34241,8.5363033
+Buhnstrasse,Oeffentlicher Verkehr,47.4220294,8.5388447
+Schützenhaus Höngg,Oeffentlicher Verkehr,47.4094978,8.4967079
+Waidspital,Oeffentlicher Verkehr,47.3992484,8.5218965
+Genossenschaftsstrasse,Oeffentlicher Verkehr,47.4153015,8.5627809
+Genossenschaftsstrasse,Oeffentlicher Verkehr,47.4151901,8.5620553
+Riedbach,Oeffentlicher Verkehr,47.4146014,8.5582798
+Riedbach,Oeffentlicher Verkehr,47.4144623,8.5584981
+Hagenholz,Oeffentlicher Verkehr,47.4145513,8.5547828
+Hagenholz,Oeffentlicher Verkehr,47.4143978,8.5552794
+Berufswahlschule,Oeffentlicher Verkehr,47.4042869,8.5332862
+Althoos,Oeffentlicher Verkehr,47.4105117,8.5241733
+Althoos,Oeffentlicher Verkehr,47.4107667,8.5240754
+Friedhof Schwandenholz,Oeffentlicher Verkehr,47.4212341,8.5374938
+Friedhof Schwandenholz,Oeffentlicher Verkehr,47.4214212,8.5377606
+Hertensteinstrasse,Oeffentlicher Verkehr,47.4227638,8.5436441
+Hertensteinstrasse,Oeffentlicher Verkehr,47.4228952,8.5436463
+Friedhof Eichbühl,Oeffentlicher Verkehr,47.3833672,8.4749506
+Schürgistrasse,Oeffentlicher Verkehr,47.4085317,8.5803074
+Schürgistrasse,Oeffentlicher Verkehr,47.4089488,8.5791652
+Kreuzstrasse,Oeffentlicher Verkehr,47.3628965,8.5499912
+Feldeggstrasse,Oeffentlicher Verkehr,47.3602538,8.5522843
+Morgental,Oeffentlicher Verkehr,47.3446583,8.5298176
+Strassenverkehrsamt,Oeffentlicher Verkehr,47.3539594,8.5115033
+Strassenverkehrsamt,Oeffentlicher Verkehr,47.3530271,8.5114803
+Hofstrasse,Oeffentlicher Verkehr,47.3731784,8.5617442
+Hofstrasse,Oeffentlicher Verkehr,47.3729574,8.5625629
+Hölderlinsteig,Oeffentlicher Verkehr,47.3664555,8.5650987
+Hölderlinsteig,Oeffentlicher Verkehr,47.3672625,8.5647473
+Klosbach,Oeffentlicher Verkehr,47.3703425,8.5636441
+Klosbach,Oeffentlicher Verkehr,47.3696268,8.5641452
+Tulpenstrasse,Oeffentlicher Verkehr,47.4061829,8.5684384
+Bleulerstrasse,Oeffentlicher Verkehr,47.3471153,8.5716807
+Wildbachstrasse,Oeffentlicher Verkehr,47.3531747,8.5588611
+Wildbachstrasse,Oeffentlicher Verkehr,47.3532116,8.5588266
+Rigiblick,Oeffentlicher Verkehr,47.3874577,8.5539706
+Spyristeig,Oeffentlicher Verkehr,47.3862441,8.5561916
+Spyristeig,Oeffentlicher Verkehr,47.3863401,8.5561622
+Krönleinstrasse,Oeffentlicher Verkehr,47.3841863,8.5609072
+Krönleinstrasse,Oeffentlicher Verkehr,47.3839808,8.5614005
+Heubeeriweg,Oeffentlicher Verkehr,47.3816183,8.5646187
+Heubeeriweg,Oeffentlicher Verkehr,47.3814769,8.5650824
+Bircher-Benner,Oeffentlicher Verkehr,47.375828,8.564987
+Bircher-Benner,Oeffentlicher Verkehr,47.3756801,8.5647927
+Fröhlichstrasse,Oeffentlicher Verkehr,47.3552403,8.5568954
+Fröhlichstrasse,Oeffentlicher Verkehr,47.3554091,8.5567354
+Letzistrasse,Oeffentlicher Verkehr,47.3912305,8.5456373
+Buhnstrasse,Oeffentlicher Verkehr,47.4221961,8.5394714
+Hönggerberg,Oeffentlicher Verkehr,47.4049401,8.5045078
+Lägernstrasse,Oeffentlicher Verkehr,47.3958465,8.5321556
+Lettenstrasse,Oeffentlicher Verkehr,47.3911083,8.5328573
+Okenstrasse,Oeffentlicher Verkehr,47.3881889,8.5341309
+Lettenstrasse,Oeffentlicher Verkehr,47.3901082,8.5325551
+Hubertus,Oeffentlicher Verkehr,47.3774055,8.4992251
+Kempfhofsteig,Oeffentlicher Verkehr,47.3974284,8.5100965
+Kappenbühlweg,Oeffentlicher Verkehr,47.4028205,8.4983654
+Kappenbühlweg,Oeffentlicher Verkehr,47.403092,8.498248
+Giblenstrasse,Oeffentlicher Verkehr,47.4103695,8.4862037
+Giblenstrasse,Oeffentlicher Verkehr,47.410734,8.4860235
+Kempfhofsteig,Oeffentlicher Verkehr,47.3975059,8.5095935
+Schwandenholz,Oeffentlicher Verkehr,47.4238341,8.5196386
+Schwandenholz,Oeffentlicher Verkehr,47.4238277,8.5191901
+Wieslergasse,Oeffentlicher Verkehr,47.4042572,8.4959603
+Michelstrasse,Oeffentlicher Verkehr,47.4065145,8.4954791
+Michelstrasse,Oeffentlicher Verkehr,47.4064437,8.4954335
+Friedhof Hönggerberg,Oeffentlicher Verkehr,47.408394,8.4943686
+Friedhof Hönggerberg,Oeffentlicher Verkehr,47.4087359,8.4942875
+Bahnhof Oerlikon,Oeffentlicher Verkehr,47.4116802,8.545658
+Bahnhof Oerlikon,Oeffentlicher Verkehr,47.4118726,8.5455822
+Bahnhof Oerlikon,Oeffentlicher Verkehr,47.4121215,8.5460504
+Felsenrainstrasse,Oeffentlicher Verkehr,47.4165632,8.5453019
+Felsenrainstrasse,Oeffentlicher Verkehr,47.4164637,8.5451375
+Hegibachplatz,Oeffentlicher Verkehr,47.3622406,8.5610096
+Neubühl,Oeffentlicher Verkehr,47.3330004,8.5347665
+Tobelhof,Oeffentlicher Verkehr,47.3828466,8.585448
+Bahnhof Wollishofen,Oeffentlicher Verkehr,47.3479517,8.5332563
+Bahnhof Wollishofen,Oeffentlicher Verkehr,47.348317,8.5331922
+Bahnhof Wollishofen/Staubstrasse,Oeffentlicher Verkehr,47.3470444,8.5329028
+Renggerstrasse,Oeffentlicher Verkehr,47.3447253,8.5331916
+Butzenstrasse,Oeffentlicher Verkehr,47.3409415,8.5302999
+Wollishoferplatz,Oeffentlicher Verkehr,47.3381751,8.5301067
+Wollishoferplatz,Oeffentlicher Verkehr,47.337911,8.5300756
+Farbhof,Oeffentlicher Verkehr,47.3902113,8.478927
+Hermetschloo,Oeffentlicher Verkehr,47.3938873,8.4736216
+Micafil,Oeffentlicher Verkehr,47.3929397,8.474772
+Micafil,Oeffentlicher Verkehr,47.3931046,8.4743006
+Bahnhof Oerlikon Ost,Oeffentlicher Verkehr,47.4135236,8.5463287
+Morgental,Oeffentlicher Verkehr,47.343938,8.530028
+Dangelstrasse,Oeffentlicher Verkehr,47.3352346,8.5299952
+Geeringstrasse,Oeffentlicher Verkehr,47.4141141,8.4808175
+Wartau,Oeffentlicher Verkehr,47.4028294,8.4914165
+Herbstweg,Oeffentlicher Verkehr,47.4088824,8.5647719
+Im Ebnet,Oeffentlicher Verkehr,47.4316917,8.5437271
+Im Ebnet,Oeffentlicher Verkehr,47.4315343,8.5436061
+Im Wingert,Oeffentlicher Verkehr,47.4015529,8.5087372
+Pflegezentrum Käferberg,Oeffentlicher Verkehr,47.3997294,8.5173752
+Pflegezentrum Käferberg,Oeffentlicher Verkehr,47.3997103,8.5183354
+Weihersteig,Oeffentlicher Verkehr,47.3981216,8.5277638
+Am Börtli,Oeffentlicher Verkehr,47.3995428,8.5072038
+Am Börtli,Oeffentlicher Verkehr,47.3997714,8.5071014
+Rebbergsteig,Oeffentlicher Verkehr,47.3969576,8.5142786
+Rebbergsteig,Oeffentlicher Verkehr,47.3970574,8.5151153
+Solidapark,Oeffentlicher Verkehr,47.3876468,8.4884978
+Trichtisal,Oeffentlicher Verkehr,47.3539915,8.600819
+Trichtisal,Oeffentlicher Verkehr,47.3539135,8.6008092
+Flobotstrasse,Oeffentlicher Verkehr,47.3806563,8.5669912
+Flobotstrasse,Oeffentlicher Verkehr,47.3807458,8.5669811
+Stodolastrasse,Oeffentlicher Verkehr,47.3568561,8.5904583
+Stodolastrasse,Oeffentlicher Verkehr,47.3567949,8.5909721
+Segeten,Oeffentlicher Verkehr,47.3558038,8.5943088
+Segeten,Oeffentlicher Verkehr,47.3557743,8.5944916
+Wiesliacher,Oeffentlicher Verkehr,47.3551763,8.5969306
+Wiesliacher,Oeffentlicher Verkehr,47.3549118,8.5970602
+Trichtenhausenfussweg,Oeffentlicher Verkehr,47.3542157,8.5986322
+Trichtenhausenfussweg,Oeffentlicher Verkehr,47.3541316,8.5986795
+Bürkliplatz,Oeffentlicher Verkehr,47.3671879,8.5402348
+Hertersteg,Oeffentlicher Verkehr,47.3675954,8.5230821
+Hertersteg,Oeffentlicher Verkehr,47.3678308,8.5228128
+Lewa Savanne,Oeffentlicher Verkehr,47.3869216,8.5794391
+Werdhölzli,Oeffentlicher Verkehr,47.3980113,8.4820439
+Universität Irchel,Oeffentlicher Verkehr,47.3956989,8.5460395
+Klusplatz,Oeffentlicher Verkehr,47.3641469,8.5666899
+Seidelhof,Oeffentlicher Verkehr,47.3919323,8.4837061
+Seidelhof,Oeffentlicher Verkehr,47.3918609,8.4842262
+Bahnhof Altstetten,Oeffentlicher Verkehr,47.3906695,8.489299
+Werdhölzli,Oeffentlicher Verkehr,47.3975454,8.4820092
+Leutschenpark,Oeffentlicher Verkehr,47.4168214,8.5557412
+Fernsehstudio,Oeffentlicher Verkehr,47.4180102,8.5605571
+Solidapark,Oeffentlicher Verkehr,47.3877041,8.4884049
+Bleulerstrasse,Oeffentlicher Verkehr,47.3472559,8.5715505
+Im Walder,Oeffentlicher Verkehr,47.3482776,8.5742038
+Klinik Hirslanden,Oeffentlicher Verkehr,47.3510846,8.5768502
+Klinik Hirslanden,Oeffentlicher Verkehr,47.3517748,8.5766863
+Balgrist,Oeffentlicher Verkehr,47.3536874,8.5757472
+Balgrist Ost,Oeffentlicher Verkehr,47.3547172,8.5750731
+Balgrist,Oeffentlicher Verkehr,47.3547254,8.5742794
+Bahnhofplatz/HB,Oeffentlicher Verkehr,47.3776871,8.5382056
+Kinderspital,Oeffentlicher Verkehr,47.35249,8.5720799
+Kinderspital,Oeffentlicher Verkehr,47.3525149,8.5723323
+Hadlaubstrasse,Oeffentlicher Verkehr,47.3868684,8.5514173
+Goldauerstrasse,Oeffentlicher Verkehr,47.3860493,8.5501368
+Neubühl,Oeffentlicher Verkehr,47.333211,8.5346507
+Arnikahof,Oeffentlicher Verkehr,47.4156694,8.5310398
+Wetlistrasse,Oeffentlicher Verkehr,47.360321,8.5681465
+Friedhof Enzenbühl,Oeffentlicher Verkehr,47.3511169,8.5793503
+Obere Hornhalde,Oeffentlicher Verkehr,47.3308389,8.5364081
+Helvetiaplatz,Oeffentlicher Verkehr,47.376091,8.5254753
+Frankental,Oeffentlicher Verkehr,47.4056479,8.4815542
+Schlyfi,Oeffentlicher Verkehr,47.362364,8.5741436
+Schlyfi,Oeffentlicher Verkehr,47.3628518,8.5744051
+Unteraffoltern,Oeffentlicher Verkehr,47.4240649,8.5112949
+Reckenholz,Oeffentlicher Verkehr,47.4283466,8.5151549
+Widmerstrasse,Oeffentlicher Verkehr,47.3368926,8.5328804
+Bellevue,Oeffentlicher Verkehr,47.367271,8.5450237
+Wipkingerplatz,Oeffentlicher Verkehr,47.3926467,8.5233842
+Förrlibuckstrasse,Oeffentlicher Verkehr,47.3923518,8.5170726
+Fischerweg,Oeffentlicher Verkehr,47.3936998,8.5121347
+Bernoulli-Häuser,Oeffentlicher Verkehr,47.3938666,8.5084469
+Hardhof,Oeffentlicher Verkehr,47.3964683,8.497348
+Tüffenwies,Oeffentlicher Verkehr,47.3970701,8.4938689
+Grünaustrasse,Oeffentlicher Verkehr,47.3952221,8.4895045
+Albisrieden,Oeffentlicher Verkehr,47.3742885,8.4850725
+Milchbuck,Oeffentlicher Verkehr,47.398139,8.542147
+Rennweg,Oeffentlicher Verkehr,47.3729556,8.5382656
+Messe/Hallenstadion,Oeffentlicher Verkehr,47.410926,8.5510379
+Central,Oeffentlicher Verkehr,47.3767194,8.5435274
+Hirzenbach,Oeffentlicher Verkehr,47.40316,8.5910052
+Altried,Oeffentlicher Verkehr,47.4054209,8.5916763
+Kirche Fluntern,Oeffentlicher Verkehr,47.3765722,8.559785
+Haldenegg,Oeffentlicher Verkehr,47.3791528,8.5449835
+Guggachstrasse,Oeffentlicher Verkehr,47.3959225,8.5403337
+Bahnhofstrasse/HB,Oeffentlicher Verkehr,47.3759151,8.5393345
+Central,Oeffentlicher Verkehr,47.3768539,8.5435216
+Waldgarten,Oeffentlicher Verkehr,47.4037923,8.5575282
+Tierspital,Oeffentlicher Verkehr,47.4018505,8.5522124
+Ueberlandpark,Oeffentlicher Verkehr,47.406113,8.564176
+Universität Irchel,Oeffentlicher Verkehr,47.396269,8.5445081
+Kinkelstrasse,Oeffentlicher Verkehr,47.389065,8.546298
+Letzistrasse,Oeffentlicher Verkehr,47.3908767,8.545433
+ETH/Universitätsspital,Oeffentlicher Verkehr,47.377863,8.5481709
+Bellevue,Oeffentlicher Verkehr,47.366867,8.5452923
+Bellevue,Oeffentlicher Verkehr,47.3665951,8.545379
+Paradeplatz,Oeffentlicher Verkehr,47.3695673,8.5387582
+Paradeplatz,Oeffentlicher Verkehr,47.3700569,8.5392848
+Sihlquai/HB,Oeffentlicher Verkehr,47.3797805,8.537427
+Zoo,Oeffentlicher Verkehr,47.3816689,8.571624
+Heerenwiesen,Oeffentlicher Verkehr,47.4048997,8.576532
+Luegisland,Oeffentlicher Verkehr,47.4060555,8.581484
+Luchswiesen,Oeffentlicher Verkehr,47.4067483,8.5857019
+Messe/Hallenstadion,Oeffentlicher Verkehr,47.4112067,8.5503061
+Messe/Hallenstadion,Oeffentlicher Verkehr,47.4109018,8.5509431
+Klusplatz,Oeffentlicher Verkehr,47.3640195,8.566214
+Auzelg,Oeffentlicher Verkehr,47.4170733,8.5690626
+Bürkliplatz,Oeffentlicher Verkehr,47.3665839,8.5417236
+Werdhölzli,Oeffentlicher Verkehr,47.3977264,8.482058
+Hardturm,Oeffentlicher Verkehr,47.3947138,8.5042811
+Hardplatz,Oeffentlicher Verkehr,47.3822219,8.5154754
+Seebach,Oeffentlicher Verkehr,47.4217272,8.5500203
+Paradeplatz,Oeffentlicher Verkehr,47.3696856,8.5386193
+Technopark,Oeffentlicher Verkehr,47.389159,8.5150562
+Bahnhof Stadelhofen,Oeffentlicher Verkehr,47.3661068,8.5480888
+Sportweg,Oeffentlicher Verkehr,47.3916922,8.5056227
+Bucheggplatz,Oeffentlicher Verkehr,47.3985235,8.5327079
+Aargauerstrasse,Oeffentlicher Verkehr,47.3921122,8.5021905
+Würzgraben,Oeffentlicher Verkehr,47.3921025,8.4945435
+Bahnhof Stettbach,Oeffentlicher Verkehr,47.3976368,8.5959421
+Bahnhof Stettbach,Oeffentlicher Verkehr,47.3969311,8.595676
+Central,Oeffentlicher Verkehr,47.376393,8.5436958
+Hirschwiesenstrasse,Oeffentlicher Verkehr,47.4003795,8.5437037
+Bahnhof Tiefenbrunnen,Oeffentlicher Verkehr,47.3505894,8.5609542
+Klusplatz,Oeffentlicher Verkehr,47.364136,8.5663879
+Glattwiesen,Oeffentlicher Verkehr,47.4017146,8.5815058
+Mattenhof,Oeffentlicher Verkehr,47.3987977,8.5907499
+Schwamendingerplatz,Oeffentlicher Verkehr,47.4046103,8.5718672
+Schiffbau,Oeffentlicher Verkehr,47.3876263,8.5194555
+Toni-Areal,Oeffentlicher Verkehr,47.3902736,8.5104592
+Bahnhof Altstetten Nord,Oeffentlicher Verkehr,47.3920981,8.4904739
+Bahnhof Altstetten Nord,Oeffentlicher Verkehr,47.3920444,8.4904414
+Auzelg,Oeffentlicher Verkehr,47.4165855,8.5686247
+Leutschenbach,Oeffentlicher Verkehr,47.4148699,8.5514577
+Seebach,Oeffentlicher Verkehr,47.421679,8.5499778
+Sihlpost/HB,Oeffentlicher Verkehr,47.376031,8.5339807
+Langmauerstrasse,Oeffentlicher Verkehr,47.3937463,8.5449779
+Central,Oeffentlicher Verkehr,47.3769308,8.5441319
+Central,Oeffentlicher Verkehr,47.3763891,8.5435935
+Central,Oeffentlicher Verkehr,47.3767719,8.5436084
+Rennweg,Oeffentlicher Verkehr,47.3733127,8.5382872
+Bahnhofstrasse/HB,Oeffentlicher Verkehr,47.3762571,8.5395499
+Sihlquai/HB,Oeffentlicher Verkehr,47.3800717,8.5376403
+Museum für Gestaltung,Oeffentlicher Verkehr,47.382073,8.535019
+Museum für Gestaltung,Oeffentlicher Verkehr,47.3823607,8.53473
+Limmatplatz,Oeffentlicher Verkehr,47.3845001,8.5317699
+Limmatplatz,Oeffentlicher Verkehr,47.3847562,8.5314729
+Löwenplatz,Oeffentlicher Verkehr,47.3761078,8.5374821
+Löwenplatz,Oeffentlicher Verkehr,47.3758316,8.5371761
+Sihlpost/HB,Oeffentlicher Verkehr,47.376353,8.5345504
+Quellenstrasse,Oeffentlicher Verkehr,47.386612,8.5289179
+Quellenstrasse,Oeffentlicher Verkehr,47.3868886,8.5285942
+Löwenbräu,Oeffentlicher Verkehr,47.3883039,8.5262355
+Löwenbräu,Oeffentlicher Verkehr,47.3885394,8.5258738
+Escher-Wyss-Platz,Oeffentlicher Verkehr,47.390004,8.5236162
+Escher-Wyss-Platz,Oeffentlicher Verkehr,47.3902689,8.5233158
+Technopark,Oeffentlicher Verkehr,47.3889904,8.5154807
+Toni-Areal,Oeffentlicher Verkehr,47.3900866,8.5108677
+Sportweg,Oeffentlicher Verkehr,47.3915323,8.5060732
+Würzgraben,Oeffentlicher Verkehr,47.3920744,8.4950568
+Aargauerstrasse,Oeffentlicher Verkehr,47.3922125,8.5026595
+Förrlibuckstrasse,Oeffentlicher Verkehr,47.3922197,8.5174413
+Fischerweg,Oeffentlicher Verkehr,47.3936008,8.5125302
+Bernoulli-Häuser,Oeffentlicher Verkehr,47.3938293,8.5088938
+Hardturm,Oeffentlicher Verkehr,47.394147,8.5045345
+Grünaustrasse,Oeffentlicher Verkehr,47.3950626,8.4899986
+Hardhof,Oeffentlicher Verkehr,47.3962124,8.4977227
+Tüffenwies,Oeffentlicher Verkehr,47.3973465,8.4942098
+Schiffbau,Oeffentlicher Verkehr,47.3878979,8.5197749
+Wipkingerplatz,Oeffentlicher Verkehr,47.3925006,8.5237362
+Stampfenbachplatz,Oeffentlicher Verkehr,47.3799029,8.5425478
+Stampfenbachplatz,Oeffentlicher Verkehr,47.3802963,8.5428337
+Haldenegg,Oeffentlicher Verkehr,47.3800173,8.5441084
+Haldenegg,Oeffentlicher Verkehr,47.3802193,8.5441104
+Haldenegg,Oeffentlicher Verkehr,47.3789139,8.5452423
+Rudolf-Brun-Brücke,Oeffentlicher Verkehr,47.374109,8.5429665
+Rudolf-Brun-Brücke,Oeffentlicher Verkehr,47.3737702,8.5428308
+Paradeplatz,Oeffentlicher Verkehr,47.3696141,8.539199
+Paradeplatz,Oeffentlicher Verkehr,47.3696946,8.5393545
+Paradeplatz,Oeffentlicher Verkehr,47.3698413,8.5391122
+Sihlstrasse,Oeffentlicher Verkehr,47.3724234,8.534589
+Sihlstrasse,Oeffentlicher Verkehr,47.3721462,8.534872
+Stauffacher,Oeffentlicher Verkehr,47.3735521,8.5297594
+Stauffacher,Oeffentlicher Verkehr,47.3734946,8.5292588
+Stauffacher,Oeffentlicher Verkehr,47.3735987,8.5304185
+Stauffacher,Oeffentlicher Verkehr,47.3736014,8.5298941
+Bahnhof Wiedikon,Oeffentlicher Verkehr,47.3711739,8.5236276
+Werd,Oeffentlicher Verkehr,47.3727141,8.5270735
+Werd,Oeffentlicher Verkehr,47.3724702,8.5267251
+Bezirksgebäude,Oeffentlicher Verkehr,47.3739878,8.5258741
+Bezirksgebäude,Oeffentlicher Verkehr,47.3741647,8.5254607
+Kalkbreite/Bhf. Wiedikon,Oeffentlicher Verkehr,47.3744949,8.5212348
+Kalkbreite/Bhf. Wiedikon,Oeffentlicher Verkehr,47.3746499,8.5207869
+Lochergut,Oeffentlicher Verkehr,47.3753859,8.5177286
+Lochergut,Oeffentlicher Verkehr,47.3755342,8.517227
+Zypressenstrasse,Oeffentlicher Verkehr,47.376593,8.5141195
+Zypressenstrasse,Oeffentlicher Verkehr,47.3768236,8.5137173
+Albisriederplatz,Oeffentlicher Verkehr,47.378122,8.5105138
+Albisriederplatz,Oeffentlicher Verkehr,47.378226,8.5100072
+Albisriederplatz,Oeffentlicher Verkehr,47.3782026,8.5105138
+Albisriederplatz,Oeffentlicher Verkehr,47.3783802,8.5101503
+Letzigrund,Oeffentlicher Verkehr,47.3811043,8.5039155
+Letzigrund,Oeffentlicher Verkehr,47.381316,8.5035119
+Freihofstrasse,Oeffentlicher Verkehr,47.3830175,8.4998794
+Freihofstrasse,Oeffentlicher Verkehr,47.3832482,8.4994656
+Kappeli,Oeffentlicher Verkehr,47.3850905,8.4950678
+Kappeli,Oeffentlicher Verkehr,47.3852832,8.494576
+Grimselstrasse,Oeffentlicher Verkehr,47.3869119,8.4902776
+Grimselstrasse,Oeffentlicher Verkehr,47.3870621,8.4897756
+Lindenplatz,Oeffentlicher Verkehr,47.3877831,8.4863618
+Lindenplatz,Oeffentlicher Verkehr,47.3879198,8.4858197
+Hubertus,Oeffentlicher Verkehr,47.3773899,8.4992176
+Hubertus,Oeffentlicher Verkehr,47.3775169,8.4988404
+Altes Krematorium,Oeffentlicher Verkehr,47.3776834,8.5071322
+Altes Krematorium,Oeffentlicher Verkehr,47.3777315,8.5075318
+ETH/Universitätsspital,Oeffentlicher Verkehr,47.3766545,8.548694
+ETH/Universitätsspital,Oeffentlicher Verkehr,47.3771783,8.5475055
+Haldenbach,Oeffentlicher Verkehr,47.3803664,8.5481658
+Winkelriedstrasse,Oeffentlicher Verkehr,47.3828992,8.5481244
+Winkelriedstrasse,Oeffentlicher Verkehr,47.3832504,8.5482003
+Seilbahn Rigiblick,Oeffentlicher Verkehr,47.3856617,8.548435
+Seilbahn Rigiblick,Oeffentlicher Verkehr,47.3861291,8.54824
+Kinkelstrasse,Oeffentlicher Verkehr,47.3887697,8.546421
+Letzistrasse,Oeffentlicher Verkehr,47.39053,8.545507
+Langmauerstrasse,Oeffentlicher Verkehr,47.3933838,8.544981
+Universität Irchel,Oeffentlicher Verkehr,47.3961446,8.5449769
+Kantonsschule,Oeffentlicher Verkehr,47.3725054,8.5505276
+Kantonsschule,Oeffentlicher Verkehr,47.3727774,8.550366
+Platte,Oeffentlicher Verkehr,47.3749165,8.5524717
+Platte,Oeffentlicher Verkehr,47.3750948,8.5527764
+Kunsthaus,Oeffentlicher Verkehr,47.370202,8.5488938
+Kunsthaus,Oeffentlicher Verkehr,47.3704266,8.5491438
+Neumarkt,Oeffentlicher Verkehr,47.3726613,8.5474461
+Neumarkt,Oeffentlicher Verkehr,47.3729508,8.5473214
+Kirche Fluntern,Oeffentlicher Verkehr,47.3762456,8.5592743
+Kirche Fluntern,Oeffentlicher Verkehr,47.3764526,8.5595127
+Voltastrasse,Oeffentlicher Verkehr,47.3769394,8.5542227
+Toblerplatz,Oeffentlicher Verkehr,47.3791721,8.559512
+Toblerplatz,Oeffentlicher Verkehr,47.3793104,8.55976
+Ottikerstrasse,Oeffentlicher Verkehr,47.385346,8.5424643
+Ottikerstrasse,Oeffentlicher Verkehr,47.3856159,8.5422345
+Beckenhof,Oeffentlicher Verkehr,47.3842422,8.5401933
+Beckenhof,Oeffentlicher Verkehr,47.3839051,8.5404031
+Kronenstrasse,Oeffentlicher Verkehr,47.3880878,8.5392553
+Kronenstrasse,Oeffentlicher Verkehr,47.3884766,8.5391319
+Schaffhauserplatz,Oeffentlicher Verkehr,47.3915543,8.5388373
+Schaffhauserplatz,Oeffentlicher Verkehr,47.3923693,8.5383384
+Schaffhauserplatz,Oeffentlicher Verkehr,47.3923854,8.5389311
+Guggachstrasse,Oeffentlicher Verkehr,47.3956225,8.5401009
+Hirschwiesenstrasse,Oeffentlicher Verkehr,47.4001622,8.5433216
+Berninaplatz,Oeffentlicher Verkehr,47.4036566,8.5479237
+Berninaplatz,Oeffentlicher Verkehr,47.4039498,8.5481733
+Salersteig,Oeffentlicher Verkehr,47.4061111,8.548375
+Sternen Oerlikon,Oeffentlicher Verkehr,47.4102303,8.5465837
+Messe/Hallenstadion,Oeffentlicher Verkehr,47.4108476,8.5501665
+Bahnhof Oerlikon Ost,Oeffentlicher Verkehr,47.4132667,8.545976
+Bahnhof Oerlikon Ost,Oeffentlicher Verkehr,47.4136133,8.5457224
+Felsenrainstrasse,Oeffentlicher Verkehr,47.416652,8.5452795
+Seebacherplatz,Oeffentlicher Verkehr,47.4197877,8.5482173
+Seebacherplatz,Oeffentlicher Verkehr,47.4200438,8.5485401
+Bad Allenmoos,Oeffentlicher Verkehr,47.4059735,8.5376769
+Bad Allenmoos,Oeffentlicher Verkehr,47.4063058,8.5378724
+Regensbergbrücke,Oeffentlicher Verkehr,47.4085161,8.5390911
+Regensbergbrücke,Oeffentlicher Verkehr,47.4087819,8.5394211
+Bucheggplatz,Oeffentlicher Verkehr,47.3984397,8.5333005
+Laubiweg,Oeffentlicher Verkehr,47.395114,8.5361913
+Sternen Oerlikon,Oeffentlicher Verkehr,47.4096451,8.5462606
+Sternen Oerlikon,Oeffentlicher Verkehr,47.4099778,8.5462095
+Sternen Oerlikon,Oeffentlicher Verkehr,47.4102394,8.5470917
+Waidfussweg,Oeffentlicher Verkehr,47.3952219,8.5192756
+Waidfussweg,Oeffentlicher Verkehr,47.3954481,8.5188261
+Eschergutweg,Oeffentlicher Verkehr,47.3963081,8.5136591
+Eschergutweg,Oeffentlicher Verkehr,47.396403,8.5127465
+Schwert,Oeffentlicher Verkehr,47.3996308,8.5049885
+Schwert,Oeffentlicher Verkehr,47.3998297,8.5046284
+Meierhofplatz,Oeffentlicher Verkehr,47.4016811,8.5004425
+Meierhofplatz,Oeffentlicher Verkehr,47.401848,8.4999189
+Zwielplatz,Oeffentlicher Verkehr,47.402161,8.4967414
+Zwielplatz,Oeffentlicher Verkehr,47.4021854,8.4962409
+Wartau,Oeffentlicher Verkehr,47.4026689,8.4920976
+Wartau,Oeffentlicher Verkehr,47.4028497,8.4914005
+Winzerstrasse,Oeffentlicher Verkehr,47.4038044,8.4861593
+Frankental,Oeffentlicher Verkehr,47.4056055,8.4814503
+Winzerstrasse,Oeffentlicher Verkehr,47.4036673,8.4866313
+Auzelg,Oeffentlicher Verkehr,47.4171299,8.5685367
+Oerlikerhus,Oeffentlicher Verkehr,47.4175193,8.553765
+Oerlikerhus,Oeffentlicher Verkehr,47.4178338,8.5540995
+Schwamendingerplatz,Oeffentlicher Verkehr,47.4048444,8.5715268
+Waldgarten,Oeffentlicher Verkehr,47.4038818,8.5574991
+Tierspital,Oeffentlicher Verkehr,47.4019208,8.5521595
+Hirzenbach,Oeffentlicher Verkehr,47.4031881,8.5910891
+Heerenwiesen,Oeffentlicher Verkehr,47.4048227,8.5760803
+Altried,Oeffentlicher Verkehr,47.405535,8.5913636
+Luegisland,Oeffentlicher Verkehr,47.4059656,8.5810256
+Luchswiesen,Oeffentlicher Verkehr,47.406714,8.5851909
+Mattenhof,Oeffentlicher Verkehr,47.3986115,8.5911603
+Roswiesen,Oeffentlicher Verkehr,47.4030508,8.5769141
+Helmhaus,Oeffentlicher Verkehr,47.3695531,8.5434848
+Helmhaus,Oeffentlicher Verkehr,47.3699472,8.5434231
+Rathaus,Oeffentlicher Verkehr,47.3718795,8.5428009
+Rathaus,Oeffentlicher Verkehr,47.372232,8.5428183
+Bellevue,Oeffentlicher Verkehr,47.3671264,8.5446155
+Bellevue,Oeffentlicher Verkehr,47.3669721,8.5448088
+Bellevue,Oeffentlicher Verkehr,47.3669371,8.5455149
+Bahnhof Stadelhofen,Oeffentlicher Verkehr,47.3661207,8.5472388
+Bürkliplatz,Oeffentlicher Verkehr,47.3664592,8.5409774
+Kantonalbank,Oeffentlicher Verkehr,47.3680123,8.5398956
+Wildbachstrasse,Oeffentlicher Verkehr,47.353044,8.558956
+Wildbachstrasse,Oeffentlicher Verkehr,47.353378,8.5586994
+Fröhlichstrasse,Oeffentlicher Verkehr,47.3550952,8.5570028
+Fröhlichstrasse,Oeffentlicher Verkehr,47.3554164,8.5567593
+Höschgasse,Oeffentlicher Verkehr,47.3578785,8.5543468
+Höschgasse,Oeffentlicher Verkehr,47.3581717,8.5541216
+Kreuzstrasse,Oeffentlicher Verkehr,47.3633416,8.5495694
+Opernhaus,Oeffentlicher Verkehr,47.3652918,8.5477614
+Feldeggstrasse,Oeffentlicher Verkehr,47.3602646,8.5522997
+Feldeggstrasse,Oeffentlicher Verkehr,47.3604688,8.552066
+Kreuzstrasse,Oeffentlicher Verkehr,47.3629136,8.5500037
+Kreuzplatz,Oeffentlicher Verkehr,47.3650888,8.5535704
+Römerhof,Oeffentlicher Verkehr,47.3677195,8.5603056
+Römerhof,Oeffentlicher Verkehr,47.3681081,8.5601534
+Römerhof,Oeffentlicher Verkehr,47.3682836,8.5596937
+Hottingerplatz,Oeffentlicher Verkehr,47.3692817,8.5552474
+Hottingerplatz,Oeffentlicher Verkehr,47.3693378,8.554681
+Hegibachplatz,Oeffentlicher Verkehr,47.3618445,8.5605582
+Signaustrasse,Oeffentlicher Verkehr,47.3630368,8.5578433
+Signaustrasse,Oeffentlicher Verkehr,47.3633068,8.5575162
+Friedhof Enzenbühl,Oeffentlicher Verkehr,47.3509901,8.5807219
+Friedhof Enzenbühl,Oeffentlicher Verkehr,47.3510285,8.5801918
+Balgrist,Oeffentlicher Verkehr,47.3544024,8.5751281
+Balgrist,Oeffentlicher Verkehr,47.3546652,8.574968
+Burgwies,Oeffentlicher Verkehr,47.3579243,8.5719226
+Burgwies,Oeffentlicher Verkehr,47.3581742,8.571593
+Wetlistrasse,Oeffentlicher Verkehr,47.3600721,8.5685987
+Wetlistrasse,Oeffentlicher Verkehr,47.3602402,8.5681523
+Hedwigsteig,Oeffentlicher Verkehr,47.3603884,8.5647733
+Rentenanstalt,Oeffentlicher Verkehr,47.3634429,8.5345055
+Rentenanstalt,Oeffentlicher Verkehr,47.3634854,8.5349156
+Stockerstrasse,Oeffentlicher Verkehr,47.3677169,8.5349452
+Stockerstrasse,Oeffentlicher Verkehr,47.3680284,8.5361675
+Stockerstrasse,Oeffentlicher Verkehr,47.3677638,8.5349093
+Bahnhof Enge,Oeffentlicher Verkehr,47.364003,8.5318726
+Bahnhof Enge,Oeffentlicher Verkehr,47.3640812,8.5314607
+Bahnhof Enge,Oeffentlicher Verkehr,47.3640725,8.5313422
+Bahnhof Enge,Oeffentlicher Verkehr,47.3644188,8.5320169
+Bahnhof Enge,Oeffentlicher Verkehr,47.3643983,8.5314515
+Bahnhof Selnau,Oeffentlicher Verkehr,47.3706721,8.5318751
+Bahnhof Selnau,Oeffentlicher Verkehr,47.3709056,8.5315107
+Stauffacher,Oeffentlicher Verkehr,47.3728126,8.5291944
+Stauffacher,Oeffentlicher Verkehr,47.3731861,8.529122
+Helvetiaplatz,Oeffentlicher Verkehr,47.3760226,8.5263061
+Helvetiaplatz,Oeffentlicher Verkehr,47.3763175,8.5259286
+Güterbahnhof,Oeffentlicher Verkehr,47.3804839,8.5195269
+Güterbahnhof,Oeffentlicher Verkehr,47.3804482,8.5196935
+Saalsporthalle,Oeffentlicher Verkehr,47.3576761,8.5207615
+Laubegg,Oeffentlicher Verkehr,47.3585989,8.5177443
+Sihlcity Nord,Oeffentlicher Verkehr,47.3599207,8.5228083
+Waffenplatzstrasse,Oeffentlicher Verkehr,47.3609577,8.5249083
+Wollishoferplatz,Oeffentlicher Verkehr,47.338327,8.530745
+Morgental,Oeffentlicher Verkehr,47.343447,8.5302743
+Renggerstrasse,Oeffentlicher Verkehr,47.3448323,8.5333552
+Brunaustrasse,Oeffentlicher Verkehr,47.3562485,8.5322369
+Kantonalbank,Oeffentlicher Verkehr,47.3683777,8.5398096
+Hölderlinstrasse,Oeffentlicher Verkehr,47.366009,8.5625282
+Hölderlinstrasse,Oeffentlicher Verkehr,47.3662794,8.562175
+Alte Trotte,Oeffentlicher Verkehr,47.3977244,8.5074456
+Hegibachplatz,Oeffentlicher Verkehr,47.3616939,8.5609503
+Salersteig,Oeffentlicher Verkehr,47.4064435,8.5482762
+Albisgütli,Oeffentlicher Verkehr,47.3519636,8.507401
+Brunnenhof,Oeffentlicher Verkehr,47.4019628,8.5349389
+Haldenbach,Oeffentlicher Verkehr,47.3801001,8.5481273
+Milchbuck,Oeffentlicher Verkehr,47.3974654,8.5416366
+Ueberlandpark,Oeffentlicher Verkehr,47.4061897,8.5641031
+Kunsthaus,Oeffentlicher Verkehr,47.370598,8.5489599
+Kunsthaus,Oeffentlicher Verkehr,47.3707745,8.5486122
+Bäckeranlage,Oeffentlicher Verkehr,47.3783659,8.5229483
+Bäckeranlage,Oeffentlicher Verkehr,47.3780698,8.5226548
+Bucheggplatz,Oeffentlicher Verkehr,47.3980754,8.5333967
+Englischviertelstrasse,Oeffentlicher Verkehr,47.3664623,8.5576177
+Englischviertelstrasse,Oeffentlicher Verkehr,47.3663508,8.5572365
+Sonneggstrasse,Oeffentlicher Verkehr,47.3827675,8.5434967
+Sonneggstrasse,Oeffentlicher Verkehr,47.3831217,8.5434917
+Röslistrasse,Oeffentlicher Verkehr,47.3885364,8.5405193
+Röslistrasse,Oeffentlicher Verkehr,47.3888626,8.5404624
+Kreuzplatz,Oeffentlicher Verkehr,47.3647815,8.5542509
+Laubiweg,Oeffentlicher Verkehr,47.3948383,8.5364921
+Römerhof,Oeffentlicher Verkehr,47.3675208,8.5598101
+Bahnhof Oerlikon Ost,Oeffentlicher Verkehr,47.4132505,8.5461782
+Bahnhof Oerlikon Ost,Oeffentlicher Verkehr,47.4135619,8.546373
+Bahnhof Oerlikon,Oeffentlicher Verkehr,47.4115273,8.5450177
+Leutschenbach,Oeffentlicher Verkehr,47.4145531,8.5511998
+Hedwigsteig,Oeffentlicher Verkehr,47.3603017,8.5652828
+Brunnenhof,Oeffentlicher Verkehr,47.402222,8.5352621
+Bahnhof Oerlikon,Oeffentlicher Verkehr,47.4113931,8.5445184
+Schaufelbergerstrasse,Oeffentlicher Verkehr,47.3689288,8.5022385
+Schaufelbergerstrasse,Oeffentlicher Verkehr,47.3688957,8.5016868
+Heuried,Oeffentlicher Verkehr,47.3694662,8.5067296
+Heuried,Oeffentlicher Verkehr,47.3694338,8.5061786
+Talwiesenstrasse,Oeffentlicher Verkehr,47.3698366,8.5097989
+Talwiesenstrasse,Oeffentlicher Verkehr,47.3698065,8.5092555
+Goldbrunnenplatz,Oeffentlicher Verkehr,47.3702765,8.513625
+Goldbrunnenplatz,Oeffentlicher Verkehr,47.3703074,8.5141504
+Bahnhof Wiedikon,Oeffentlicher Verkehr,47.3712866,8.5241747
+Schmiede Wiedikon,Oeffentlicher Verkehr,47.369923,8.519793
+Schmiede Wiedikon,Oeffentlicher Verkehr,47.3702331,8.5188141
+Bahnhofplatz/HB,Oeffentlicher Verkehr,47.3773114,8.5391199
+Bahnhofplatz/HB,Oeffentlicher Verkehr,47.3771433,8.5396311
+Felsenrainstrasse,Oeffentlicher Verkehr,47.4169607,8.545519
+Siemens,Oeffentlicher Verkehr,47.3782729,8.4935641
+Siemens,Oeffentlicher Verkehr,47.3784524,8.4940243
+Albisrieden,Oeffentlicher Verkehr,47.3743435,8.4850273
+Fellenbergstrasse,Oeffentlicher Verkehr,47.37578,8.4882539
+Fellenbergstrasse,Oeffentlicher Verkehr,47.375712,8.4878081
+Central,Oeffentlicher Verkehr,47.3768119,8.5441421
+Bachmattstrasse,Oeffentlicher Verkehr,47.3892172,8.4826492
+Bachmattstrasse,Oeffentlicher Verkehr,47.3889645,8.4830385
+Bahnhof Tiefenbrunnen,Oeffentlicher Verkehr,47.3505613,8.561033
+Opernhaus,Oeffentlicher Verkehr,47.3655926,8.5474497
+Bellevue,Oeffentlicher Verkehr,47.3672318,8.5452863
+Bändliweg,Oeffentlicher Verkehr,47.3962865,8.4852278
+Bändliweg,Oeffentlicher Verkehr,47.3964515,8.4848374
+Hardturm,Oeffentlicher Verkehr,47.3942526,8.5040471
+Alte Trotte,Oeffentlicher Verkehr,47.397506,8.5077934
+Tunnelstrasse,Oeffentlicher Verkehr,47.3664566,8.5329684
+Tunnelstrasse,Oeffentlicher Verkehr,47.3661914,8.5326288
+Bahnhof Enge/Bederstrasse,Oeffentlicher Verkehr,47.3645298,8.5302408
+Bahnhof Enge/Bederstrasse,Oeffentlicher Verkehr,47.3646829,8.5307267
+Waffenplatzstrasse,Oeffentlicher Verkehr,47.3624827,8.5270301
+Sihlcity Nord,Oeffentlicher Verkehr,47.3596657,8.5225223
+Saalsporthalle,Oeffentlicher Verkehr,47.3579171,8.5203451
+Laubegg,Oeffentlicher Verkehr,47.3587436,8.5172786
+Uetlihof,Oeffentlicher Verkehr,47.3568944,8.51409
+Uetlihof,Oeffentlicher Verkehr,47.3565678,8.5138856
+Strassenverkehrsamt,Oeffentlicher Verkehr,47.3531019,8.5110749
+Strassenverkehrsamt,Oeffentlicher Verkehr,47.3532499,8.5115464
+Frankental,Oeffentlicher Verkehr,47.4055828,8.481382
+Voltastrasse,Oeffentlicher Verkehr,47.377055,8.5537161
+Zürichbergstrasse,Oeffentlicher Verkehr,47.3786796,8.5644809
+Zürichbergstrasse,Oeffentlicher Verkehr,47.3787841,8.5640903
+Susenbergstrasse,Oeffentlicher Verkehr,47.3784962,8.5679652
+Susenbergstrasse,Oeffentlicher Verkehr,47.3785034,8.5676038
+Museum Rietberg,Oeffentlicher Verkehr,47.3608824,8.5315824
+Museum Rietberg,Oeffentlicher Verkehr,47.3605568,8.5315917
+Brunaustrasse,Oeffentlicher Verkehr,47.3558716,8.5322301
+Billoweg,Oeffentlicher Verkehr,47.3514847,8.5319462
+Billoweg,Oeffentlicher Verkehr,47.3518119,8.5319803
+Renggerstrasse,Oeffentlicher Verkehr,47.3446041,8.5330182
+Bahnhof Wollishofen/Staubstrasse,Oeffentlicher Verkehr,47.3468565,8.5329137
+Bahnhof Wollishofen/Staubstrasse,Oeffentlicher Verkehr,47.3472079,8.5328909
+Morgental,Oeffentlicher Verkehr,47.3431465,8.5305061
+Butzenstrasse,Oeffentlicher Verkehr,47.34075,8.5302019
+Butzenstrasse,Oeffentlicher Verkehr,47.3410821,8.530382
+Roswiesen,Oeffentlicher Verkehr,47.4028999,8.5773413
+Glattwiesen,Oeffentlicher Verkehr,47.4015625,8.5819334
+Probstei,Oeffentlicher Verkehr,47.400213,8.586561
+Probstei,Oeffentlicher Verkehr,47.4003713,8.586106
+Central,Oeffentlicher Verkehr,47.3766731,8.5438208
+Wollishoferplatz,Oeffentlicher Verkehr,47.3381445,8.5300851
+Schaffhauserplatz,Oeffentlicher Verkehr,47.3915443,8.5387184
+Triemli,Oeffentlicher Verkehr,47.3678023,8.4953582
+Triemli,Oeffentlicher Verkehr,47.3677485,8.4953681
+Hardplatz,Oeffentlicher Verkehr,47.3823062,8.5150044
+Escher-Wyss-Platz,Oeffentlicher Verkehr,47.3901307,8.5219069
+Escher-Wyss-Platz,Oeffentlicher Verkehr,47.3904257,8.522243
+Bahnhof Hardbrücke,Oeffentlicher Verkehr,47.3849207,8.5167221
+Bahnhof Hardbrücke,Oeffentlicher Verkehr,47.3852702,8.5173167
+Hardplatz,Oeffentlicher Verkehr,47.3825225,8.5152572
+Micafil,Oeffentlicher Verkehr,47.3931184,8.4743104
+Micafil,Oeffentlicher Verkehr,47.3929249,8.4747606
+Farbhof,Oeffentlicher Verkehr,47.3913504,8.4785274
+Farbhof,Oeffentlicher Verkehr,47.3910432,8.4788232
+Bahnhof Altstetten,Oeffentlicher Verkehr,47.3911078,8.4879149
+Seidelhof,Oeffentlicher Verkehr,47.3919462,8.4837101
+Seidelhof,Oeffentlicher Verkehr,47.3918446,8.4842221
+Bahnhof Altstetten,Oeffentlicher Verkehr,47.3910815,8.4879045
+Milchbuck,Oeffentlicher Verkehr,47.3977445,8.541887
+Milchbuck,Oeffentlicher Verkehr,47.3978505,8.5418816
+Stauffacher,Oeffentlicher Verkehr,47.373186,8.5291214
 Il Grappolo,Restaurant,47.3361381,8.5322408
 Yan-Ruyi,Restaurant,47.3441094,8.53266
 Ziegel oh Lac,Restaurant,47.3435586,8.5368559

@@ -69,7 +69,9 @@ if __name__ == "__main__":
         {'osm_key': 'amenity', 'osm_wert': 'school', 'name_de': 'Schule'},
         {'osm_key': 'shop', 'osm_wert': 'supermarket', 'name_de': 'Supermarkt'},
         {'osm_key': 'leisure', 'osm_wert': 'park', 'name_de': 'Gruenflaeche'},
-        {'osm_key': 'public_transport', 'osm_wert': 'station', 'name_de': 'Oeffentlicher Verkehr'},
+        {'osm_key': 'public_transport', 'osm_wert': 'station', 'name_de': 'Oeffentlicher Verkehr'}, # Bahnhöfe
+        {'osm_key': 'highway', 'osm_wert': 'bus_stop', 'name_de': 'Oeffentlicher Verkehr'},         # Bushaltestellen
+        {'osm_key': 'railway', 'osm_wert': 'tram_stop', 'name_de': 'Oeffentlicher Verkehr'},        # Tramhaltestellen
         {'osm_key': 'amenity', 'osm_wert': 'restaurant', 'name_de': 'Restaurant'},
         {'osm_key': 'amenity', 'osm_wert': 'hospital', 'name_de': 'Spital'}
     ]
@@ -83,9 +85,9 @@ if __name__ == "__main__":
             alle_datenframes.append(df_temp)
             print(f" -> {len(df_temp)} Punkte für '{kat['name_de']}' gefunden.")
         
-        # MODIFIKATION: Pause auf 15 Sekunden erhöht, um Blockaden zu vermeiden
-        print(" -> 15 Sekunden Pause, um den Server zu schonen...")
-        time.sleep(15) 
+        # MODIFIKATION: Pause auf 8 Sekunden erhöht, um Blockaden zu vermeiden
+        print(" -> 8 Sekunden Pause, um den Server zu schonen...")
+        time.sleep(8) 
     
     if alle_datenframes:
         df_gesamt = pd.concat(alle_datenframes, ignore_index=True)
@@ -104,4 +106,4 @@ if __name__ == "__main__":
     #
     # strassennetz_extrahieren() 
     
-    print("\nDas Skript ist vollständig durchgelaufen. Die Daten sind bereit für Rolle 2!")
+    print("\nDas Skript ist vollständig durchgelaufen. Die Daten sind bereit für Jascha!")
